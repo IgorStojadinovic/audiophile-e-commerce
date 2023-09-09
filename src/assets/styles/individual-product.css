@@ -1,0 +1,156 @@
+.headphone-figure-product {
+    @apply
+    flex
+    flex-col
+    items-start
+    justify-start
+
+}
+.headphone-fig-caption{
+    @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+}
+
+.headphone-picture-product {
+    @apply
+    flex
+    justify-center
+    items-center
+    bg-light-gray
+    w-full
+    rounded-lg
+    mb-8
+    pt-10
+    pb-[68px]
+    px-[54px]
+}
+
+.headphone-subheading-product {
+    @apply
+    text-orange-main
+    text-[14px]
+    uppercase
+    tracking-[10px]
+    mb-6
+}
+
+.headphone-heading {
+    @apply
+    uppercase
+    text-[28px]
+    font-semibold
+    mb-6
+}
+
+.headphone-text {
+    @apply
+    text-black/50
+    mb-6
+}
+
+.price {
+ @apply
+ text-start 
+ my-6 
+ font-semibold 
+ text-xl
+}
+
+.add-to-cart-container {
+    @apply
+    flex 
+    w-full 
+    shadow-md 
+}
+
+.add-to-cart-wapper {
+    @apply
+    flex 
+    w-1/2  
+    items-center 
+    bg-light-gray
+}
+
+.subtract-btn {
+    @apply 
+    flex 
+    items-center 
+    justify-center 
+    w-[30%] 
+    text-black/50 
+    text-2xl 
+    hover:bg-black/10  
+    h-full
+}
+
+.quantity {
+    @apply
+    flex-1 
+    flex 
+    items-center 
+    justify-center 
+    w-[30%] 
+    text-black/50  
+    h-full
+}
+
+.add-btn {
+    @apply
+    flex 
+    items-center 
+    justify-center 
+    w-[30%] 
+    text-black/50 
+    text-xl 
+    hover:bg-black/10 
+    h-full
+}
+
+.promo {
+    @apply
+    flex 
+    flex-col 
+    justify-between 
+    items-center 
+    h-[756px] 
+    mb-[120px]
+}
+
+.yml-title {
+    @apply 
+    text-center 
+    text-2xl 
+    uppercase 
+    font-semibold 
+    mb-10
+}
+
+.yml-grid {
+    @apply
+    grid 
+    grid-cols-1 
+    gap-14
+}
+
+.yml-container {
+    @apply 
+    flex 
+    flex-col 
+    items-center 
+    justify-between 
+    text-center 
+    h-[265px]
+}
+
+.yml-picture {
+    @apply
+    bg-light-gray/50
+     w-full 
+     flex 
+     items-center 
+     justify-center 
+     rounded-lg
+}

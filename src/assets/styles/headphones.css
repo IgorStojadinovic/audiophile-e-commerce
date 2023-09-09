@@ -1,0 +1,54 @@
+.headphone-figure {
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    text-center
+    mt-16
+
+}
+.headphone-fig-caption{
+    @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+}
+
+.headphone-picture {
+    @apply
+    flex
+    justify-center
+    items-center
+    bg-light-gray
+    w-full
+    rounded-lg
+    mb-8
+    pt-10
+    pb-[68px]
+    px-[54px]
+}
+
+.headphone-subheading {
+    @apply
+    text-orange-main
+    text-[14px]
+    uppercase
+    tracking-[10px]
+    mb-6
+}
+
+.headphone-heading {
+    @apply
+    uppercase
+    text-[28px]
+    font-semibold
+    mb-6
+}
+
+.headphone-text {
+    @apply
+    text-black/50
+    mb-6
+}

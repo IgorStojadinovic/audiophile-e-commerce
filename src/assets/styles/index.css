@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./navbar.css";
+@import "./buttons.css";
+@import "./home.css";
+@import "./home-usp.css";
+@import "./headphones.css";
+@import "./individual-product.css";
+@import "./checkout.css";
+@import "./footer.css";
+
+
+.scroll-disabled {
+    @apply overflow-y-hidden;
+  }
+  
+  .scroll-enabled {
+    @apply overflow-y-scroll;
+  }

@@ -1,0 +1,41 @@
+.navbar-absolute{
+    @apply
+    z-40 
+    w-full
+    px-6
+    py-8
+    border-white/25
+    border-b-2
+    bg-black    
+}
+
+.navbar{
+    @apply 
+    w-full
+    px-6
+    pb-8
+    pt-8
+    border-white/25
+    border-b-2
+    bg-black   
+}
+
+
+.nav-list{
+    @apply
+    flex
+    justify-between
+}
+
+.page-header {
+    @apply
+    text-center
+    bg-black
+    py-8 
+    px-[84px] 
+    text-white 
+    uppercase 
+    font-semibold 
+    text-[28px] 
+    tracking-[2px]
+}

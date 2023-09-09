@@ -1,0 +1,91 @@
+.hero-container {
+    height: 100vh;
+    background: url('/src/assets/images/Bitmap.png'), rgb(0, 0, 0) 0px 0px / 100% 100% no-repeat;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    @apply
+    px-6
+}
+
+.hero-wapper {
+  @apply 
+  flex
+  items-center
+  justify-center
+  h-full
+}
+
+.hero-main {
+  @apply
+  flex
+  flex-col
+  items-center
+  justify-center
+  text-center
+  mt-[108px]
+}
+
+.hero-main-subheading {
+    letter-spacing: 10px;
+    font-size: 14px;
+  @apply
+  text-white/50
+  uppercase
+  text-sm /*14px*/
+  mb-4
+}
+
+.hero-main-title {
+    letter-spacing: 1.286px;
+    font-weight: 700;
+  @apply
+  text-white
+  uppercase
+  text-3xl /*36px*/
+  mb-6
+}
+
+.hero-main-p {
+  line-height: 25px;
+  @apply
+    text-white/75
+    mb-7
+}
+
+.products-sections {
+ @apply
+ grid
+ grid-cols-1
+ gap-4
+ px-6
+ mt-10
+ mb-[120px]
+}
+
+.product-wapper {
+  @apply
+  relative 
+  h-[220px]
+}
+
+.product-container{
+  @apply
+  flex 
+  flex-col 
+  justify-between 
+  items-center 
+  z-40 
+  h-full
+}
+
+.product-block-element {
+  @apply
+  absolute
+  bg-[#F1F1F1]
+  h-[165px] 
+  w-full 
+  bottom-0  
+  rounded-lg 
+  z-[-10]
+}
+

@@ -1,0 +1,113 @@
+.product-usp{
+    @apply
+    px-6
+    overflow-hidden
+    grid
+    grid-cols-1
+    gap-6
+  }
+
+.zx9-container{
+    @apply
+    relative 
+    flex 
+    flex-col 
+    justify-center 
+    items-center 
+    text-center 
+    text-white
+  bg-orange-main 
+    px-6 py-14 
+    rounded-lg
+}
+
+.zx9-title{
+    @apply
+    mt-8 
+    mb-6 
+    z-40 
+    text-[40px] 
+    uppercase 
+    font-semibold 
+    w-[60%] 
+    leading-10 
+    text-center
+}
+
+.zx9-paragprah {
+    @apply
+    mb-6
+    text-white/80
+}
+
+.oval-group-container {
+    @apply
+    z-10  
+    h-[558px]
+    flex 
+    justify-center 
+    items-center 
+    absolute 
+    top-[-120px]
+}
+
+.oval-1 {
+    @apply
+    flex 
+    justify-center 
+    items-center 
+    border 
+    border-white/30 
+    rounded-full 
+    h-[558px] 
+    w-[558px]
+}
+
+.oval-2 {
+    @apply
+    flex 
+    justify-center 
+    items-center 
+    border 
+    border-white/30 
+    rounded-full 
+    h-[320px] 
+    w-[320px]
+}
+
+.oval-3 {
+    @apply
+    border 
+    border-white/30 
+    rounded-full 
+    h-[280px] 
+    w-[280px]
+}
+
+.zx7-container {
+    @apply
+    flex
+    flex-col
+    justify-start
+    items-start
+    text-center
+    bg-zx7-mobile
+    px-6
+    py-[100px]
+    rounded-lg
+}
+
+.zx7-title {
+    @apply
+    text-[28px]
+    font-semibold
+    uppercase
+    mb-8
+}
+
+.yx1-container{
+    @apply
+    py-10
+    px-6
+    bg-light-gray
+}

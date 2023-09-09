@@ -1,0 +1,89 @@
+ /*Buttons*/
+ .btn-orange {
+    width: 160px;
+    height: 48px;
+    font-size: 13px;
+  @apply 
+  uppercase
+  tracking-widest
+  py-2
+  px-4 
+  bg-orange-main
+  text-white 
+  font-semibold 
+  rounded-lg 
+  shadow-md 
+  rounded-none	
+  hover:bg-orange-light ;
+}
+
+.btn-orange-disabled {
+  width: 160px;
+  height: 48px;
+  font-size: 13px;
+@apply 
+uppercase
+tracking-widest
+py-2
+px-4 
+bg-orange-light
+text-white 
+font-semibold 
+rounded-lg 
+shadow-md 
+rounded-none	;
+}
+
+.btn-dark{
+  width: 160px;
+  height: 48px;
+  font-size: 13px;
+@apply 
+uppercase
+tracking-widest
+py-2 
+px-4 
+bg-black
+text-white 
+font-semibold 
+rounded-lg 
+shadow-md 
+rounded-none	
+hover:bg-orange-main ;
+}
+
+.btn-outline {
+    width: 160px;
+    height: 48px;
+    font-size: 13px;
+  @apply 
+  uppercase
+  tracking-widest
+  py-2 
+  px-4 
+  font-bold
+  shadow-md 
+  rounded-none	
+  border-2 border-black
+  hover:bg-black 
+  hover:text-white
+
+}
+
+.btn-link {
+    width: 160px;
+    height: 48px;
+    font-size: 13px;
+  @apply 
+  flex
+  items-center
+  justify-center
+  uppercase
+  tracking-widest
+  py-2 
+  px-4 
+  text-black/50
+  font-semibold 
+  rounded-none	
+  hover:text-orange-main
+}
