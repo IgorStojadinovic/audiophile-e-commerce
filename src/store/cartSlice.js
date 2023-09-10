@@ -5,6 +5,7 @@ const initialState = {
   cart: [],
   cartStatus:false,
   showCart:false,
+  showSummary:false,
   yxQuantity:0,
   xx99mkIIQuantity:0,
   xx99mkIQuantity:0,
@@ -494,6 +495,12 @@ const cartSlice = createSlice({
             state.showCart = !state.showCart
             
         }
+    },
+    showSummary:{
+        reducer(state,action){
+            state.showSummary = !state.showSummary
+            
+        }
     }
   },
 
@@ -512,11 +519,13 @@ export const getZX7Quantity = (state) => state.zx7Quantity
 export const getShowCart = (state) => state.showCart
 export const getCartStatus = (state) => state.cartStatus;
 export const getScrollStatus = (state) => state.scroll;
+export const getSummary = (state) => state.showSummary;
 export const { 
     addItem,
     updateQuantity,
     removeAll,
-    showCart
+    showCart,
+    showSummary
 } = cartSlice.actions;
 
 export default cartSlice.reducer;

@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import {FiChevronRight} from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
+import {
+  getSummary,
+} from '../../store/cartSlice';
 
 const Home = () => {
+  const summary = useSelector(getSummary);
+  
+  useEffect(() => {
+    summary
+      ? (document.body.style.overflow="hidden")
+      : (document.body.style.overflow="scroll");
+  }, [summary]);
   return (
     <>
       <section className='hero-container'>

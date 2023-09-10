@@ -87,3 +87,9 @@ hover:bg-orange-main ;
   rounded-none	
   hover:text-orange-main
 }
+
+.btn-back {
+  @apply
+  text-black/50 
+  my-4
+}
