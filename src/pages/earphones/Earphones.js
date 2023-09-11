@@ -9,7 +9,7 @@ const Earphones = () => {
   return (
     <>
     <h1 className='page-header'>Earphones</h1>
-    <section className='px-6 mb-[120px]'>
+    <section className='px-6 mb-[120px] md:px-10'>
         
         <figure className='headphone-figure'>
             <picture className='headphone-picture'>
@@ -17,7 +17,7 @@ const Earphones = () => {
             </picture>
             <figcaption className='headphone-fig-caption'>
                 <p className='headphone-subheading'>new product</p>
-                <h1 className='headphone-heading'>YX1 WIRELESS EARPHONES</h1>
+                <h1 className='headphone-heading md:font-bold'>YX1 WIRELESS EARPHONES</h1>
                 <p className='headphone-text'>Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.</p>
                 <Link to="earphone-yx1">
                   <button className='btn-orange'>See product</button>

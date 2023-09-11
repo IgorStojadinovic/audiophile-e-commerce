@@ -8,7 +8,7 @@ const Headphones = () => {
   return (
     <>
     <h1 className='page-header'>Headphones</h1>
-    <section className='px-6 mb-[120px]'>
+    <section className='px-6 mb-[120px] md:px-10'>
         
         <figure className='headphone-figure'>
             <picture className='headphone-picture'>
@@ -16,7 +16,7 @@ const Headphones = () => {
             </picture>
             <figcaption className='headphone-fig-caption'>
                 <p className='headphone-subheading'>new product</p>
-                <h1 className='headphone-heading'>xx99 mark II headphones</h1>
+                <h1 className='headphone-heading md:font-bold'>xx99 mark II headphones</h1>
                 <p className='headphone-text'>The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.</p>
                 <Link to='headphone-xx99-mark-2'>
                   <button className='btn-orange'>See product</button>
@@ -29,7 +29,7 @@ const Headphones = () => {
                 <img src={require('../../assets/images/heaphone-page/xx-99-mark-I-mobile.png')} />
             </picture>
             <figcaption className='headphone-fig-caption'>
-                <h1 className='headphone-heading'>XX99 Mark I Headphones</h1>
+                <h1 className='headphone-heading md:font-bold'>XX99 Mark I Headphones</h1>
                 <p className='headphone-text'>As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
                 <Link to='headphone-xx99-mark-1'>
                   <button className='btn-orange'>See product</button>
@@ -42,7 +42,7 @@ const Headphones = () => {
                 <img src={require('../../assets/images/heaphone-page/xx59-mobile.png')} />
             </picture>
             <figcaption className='headphone-fig-caption'>
-                <h1 className='headphone-heading w-1/2'>XX59 headphones</h1>
+                <h1 className='headphone-heading w-1/2 md:w-[40%] md:font-bold'>XX59 headphones</h1>
                 <p className='headphone-text'>As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
                 <Link to='headphone-xx59'>
                   <button className='btn-orange'>See product</button>

@@ -5,6 +5,12 @@ import {addItem,updateQuantity} from "../../store/cartSlice";
 import {Link} from "react-router-dom"
 import { useNavigate } from 'react-router-dom'
 import {FiChevronRight} from 'react-icons/fi';
+import xx99MIIM from "../../assets/images/sugestions/xx-99-2-mobile.png";
+import xx99MIIT from "../../assets/images/sugestions/xx-99-2-tablet.png";
+import zx9SugM from "../../assets/images/sugestions/zx9-mobile.png"
+import zx9SugT from "../../assets/images/sugestions/zx9-tablet.png"
+import xx59M from "../../assets/images/sugestions/xx559-mobile.png";
+import xx59T from "../../assets/images/sugestions/xx59-tablet.png";
 
 const XX99MARKI = () => {
     const navigate = useNavigate();
@@ -35,9 +41,9 @@ const XX99MARKI = () => {
     },[])
   return (
       <>
-          <section className='px-6 mb-[120px]'>
+          <section className='px-6 pt-6 mb-[120px] md:px-10'>
+              <Link onClick={() => { navigate(-1) }} className='text-black/50 my-4'>Go Back</Link>
               <figure className='headphone-figure-product '>
-                <Link onClick={() => { navigate(-1) }} className='text-black/50 my-4'>Go Back</Link>
                   <picture className='headphone-picture-product'>
                       <img src={require('../../assets/images/products/xx99-mark-1-mobile.png')} alt="xx99-mark-2-headpnones" />
                   </picture>
@@ -62,7 +68,7 @@ const XX99MARKI = () => {
                   </figcaption>
               </figure>
           </section>
-          <section className='px-6 mb-[120px]'>
+          <section className='px-6 mb-[120px] md:mx-10'>
               <h2 className='text-2xl uppercase font-semibold mb-6'>Features</h2>
               <p className='mb-4 text-black/50'>
               As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.
@@ -72,7 +78,7 @@ const XX99MARKI = () => {
               </p>
           </section>
 
-          <section className='px-6 mb-[120px]'>
+          <section className='px-6 mb-[120px] md:px-10 md:flex md:justify-between md:w-[70%]'>
               <h2 className='text-2xl uppercase font-semibold mb-6'>In the box</h2>
               <div>
                 <div className='flex mb-2'>
@@ -94,73 +100,124 @@ const XX99MARKI = () => {
               </div>
           </section>
           <section className='promo'>
-            <img src={require('../../assets/images/products/xx-99-I-1.png')} className='rounded-lg' alt="promo"/>
-            <img src={require('../../assets/images/products/xx-99-I-mobile-2.png')} className='rounded-lg' alt="promo"/>
-            <img src={require('../../assets/images/products/xx-99-I-mobile-3.png')} className='rounded-lg' alt="promo"/>
+            <img src={require('../../assets/images/products/xx-99-I-1.png')} className='rounded-lg  md:order-3 md:w-full' alt="promo"/>
+            <img src={require('../../assets/images/products/xx-99-I-mobile-2.png')} className='rounded-lg md:order-1 md:w-full' alt="promo"/>
+            <img src={require('../../assets/images/products/xx-99-I-mobile-3.png')} className='rounded-lg md:order-2 md:row-span-2 md:w-full' alt="promo"/>
           </section>
-          <section className='px-6 mb-[120px]'>
+          <section className='px-6 mb-[120px] md:px-10'>
             <h2 className='yml-title'>You may also like</h2>
-            <div className="yml-grid"> 
-            <figure className='yml-container'>
+            <div className="yml-grid">
+              <figure className='yml-container'>
                 <picture className='yml-picture'>
-                    <img src={require("../../assets/images/sugestions/xx-99-2-mobile.png")} className='py-3 pt' alt="xx99-mark-2-headpnones"/>
+                  {/* Desktop image 
+                        <source
+                          media="(min-width: 1280px)"
+                          srcSet={zx9Desktop}
+                        />
+                        */}
+                  {/* Tablet image */}
+                  <source
+                    media="(min-width: 768px)"
+                    srcSet={xx99MIIT}
+
+                  />
+                  {/* Mobile image */}
+                  <img
+                    src={xx99MIIM}
+                    alt="footer-promo"
+
+                  />
                 </picture>
-                    <h3 className='uppercase font-semibold text-xl'>XX99 Mark II</h3>
-                    <Link to="/headphones/headphone-xx99-mark-2">
-                      <button className='btn-orange'>See product</button>
-                    </Link>
-            </figure>
-            <figure className='yml-container'>
+                <h3 className='uppercase font-semibold text-xl md:my-10'>XX99 Mark II</h3>
+                <Link to="/headphones/headphone-xx99-mark-2">
+                  <button className='btn-orange'>See product</button>
+                </Link>
+              </figure>
+              <figure className='yml-container'>
                 <picture className='yml-picture'>
-                    <img src={require("../../assets/images/sugestions/xx559-mobile.png")} className='py-3 pt' alt="xx59-mark-headpnones"/>
+                  {/* Desktop image 
+                        <source
+                          media="(min-width: 1280px)"
+                          srcSet={zx9Desktop}
+                        />
+                        */}
+                  {/* Tablet image */}
+                  <source
+                    media="(min-width: 768px)"
+                    srcSet={xx59T}
+
+                  />
+                  {/* Mobile image */}
+                  <img
+                    src={xx59M}
+                    alt="footer-promo"
+
+                  />
                 </picture>
-                    <h3 className='uppercase font-semibold text-xl'>XX59</h3>
-                    <Link to="/headphones/headphone-xx59">
-                      <button className='btn-orange'>See product</button>
-                    </Link>
-            </figure>
-            <figure className='yml-container'>
+                <h3 className='uppercase font-semibold text-xl md:my-10'>XX59</h3>
+                <Link to="/headphones/headphone-xx59">
+                  <button className='btn-orange'>See product</button>
+                </Link>
+              </figure>
+              <figure className='yml-container'>
                 <picture className='yml-picture'>
-                    <img src={require("../../assets/images/sugestions/zx9-mobile.png")} className='py-3 pt' alt="zx9-speakers"/>
+                  {/* Desktop image 
+                        <source
+                          media="(min-width: 1280px)"
+                          srcSet={zx9Desktop}
+                        />
+                        */}
+                  {/* Tablet image */}
+                  <source
+                    media="(min-width: 768px)"
+                    srcSet={zx9SugT}
+
+                  />
+                  {/* Mobile image */}
+                  <img
+                    src={zx9SugM}
+                    alt="footer-promo"
+
+                  />
                 </picture>
-                    <h3 className='uppercase font-semibold text-xl'>ZX9 Speaker</h3>
-                    <Link to="/speakers/speaker-zx9">
-                      <button className='btn-orange'>See product</button>
-                    </Link>
-            </figure>
+                <h3 className='uppercase font-semibold text-xl md:my-10'>ZX9 Speaker</h3>
+                <Link to="/speakers/speaker-zx9">
+                  <button className='btn-orange'>See product</button>
+                </Link>
+              </figure>
             </div>
           </section>
           <section className='products-sections'>
-        <div className='product-wapper'>
-          <div className='product-container'>
-            <img src={require('../../assets/images/headphone-mobile.png')} />
-            <h2 className='uppercase font-semibold tracking-widest'>Headphones</h2>
-            <Link to='/headphones' onClick={() => { scrollTop() }}>
-              <button className='btn-link mb-4'>Shop <FiChevronRight className='ml-1 hover:text-orange-600' /></button>
-            </Link>
+          <div className='product-wapper'>
+            <div className='product-container'>
+              <img src={require('../../assets/images/headphone-mobile.png')} />
+              <h2 className='uppercase font-semibold tracking-widest'>Headphones</h2>
+              <Link to='/headphones' onClick={() => { scrollTop() }}>
+                <button className='btn-link mb-4'>Shop <FiChevronRight className='ml-1 hover:text-orange-600' /></button>
+              </Link>
+            </div>
+            <div className='product-block-element'></div>
           </div>
-          <div className='product-block-element'></div>
-        </div>
-        <div className='product-wapper'>
-          <div className='product-container'>
-            <img src={require('../../assets/images/speaker-mobile.png')} />
-            <h2 className='uppercase font-semibold tracking-widest'>Speakers</h2>
-            <Link to='/speakers' onClick={() => { scrollTop() }}>
-              <button className='btn-link mb-4'>Shop <FiChevronRight className='ml-1 hover:text-orange-600' /></button>
-            </Link>
+          <div className='product-wapper'>
+            <div className='product-container'>
+              <img src={require('../../assets/images/speaker-mobile.png')} />
+              <h2 className='uppercase font-semibold tracking-widest'>Speakers</h2>
+              <Link to='/speakers' onClick={() => { scrollTop() }}>
+                <button className='btn-link mb-4'>Shop <FiChevronRight className='ml-1 hover:text-orange-600' /></button>
+              </Link>
+            </div>
+            <div className='product-block-element'></div>
           </div>
-          <div className='product-block-element'></div>
-        </div>
-        <div className='product-wapper'>
-          <div className='product-container'>
-            <img src={require('../../assets/images/earphones-mobile.png')} />
-            <h2 className='uppercase font-semibold tracking-widest'>Earphones</h2>
-            <Link to='/earphones' onClick={() => { scrollTop() }}>
-              <button className='btn-link mb-4'>Shop <FiChevronRight className='ml-1 hover:text-orange-600' /></button>
-            </Link>
+          <div className='product-wapper'>
+            <div className='product-container'>
+              <img src={require('../../assets/images/earphones-mobile.png')} />
+              <h2 className='uppercase font-semibold tracking-widest'>Earphones</h2>
+              <Link to='/earphones' onClick={() => { scrollTop() }}>
+                <button className='btn-link mb-4'>Shop <FiChevronRight className='ml-1 hover:text-orange-600' /></button>
+              </Link>
+            </div>
+            <div className='product-block-element'></div>
           </div>
-          <div className='product-block-element'></div>
-        </div>
       </section>
       </>
   )

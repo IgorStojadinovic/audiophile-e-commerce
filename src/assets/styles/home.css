@@ -1,11 +1,23 @@
-.hero-container {
+
+/*.hero-container {
     height: 100vh;
     background: url('/src/assets/images/Bitmap.png'), rgb(0, 0, 0) 0px 0px / 100% 100% no-repeat;
     background-repeat: no-repeat;
     background-position: bottom;
     @apply
     px-6
+    bg-hero-mobile
 }
+*/
+.hero-container {
+  @apply
+  h-screen
+  px-6
+  bg-hero-mobile 
+  bg-center 
+  bg-cover
+  md:bg-hero-tablet
+} 
 
 .hero-wapper {
   @apply 
@@ -13,6 +25,7 @@
   items-center
   justify-center
   h-full
+  
 }
 
 .hero-main {
@@ -23,6 +36,9 @@
   justify-center
   text-center
   mt-[108px]
+  md:mt-0
+  md:mx-48
+ 
 }
 
 .hero-main-subheading {
@@ -43,6 +59,8 @@
   uppercase
   text-3xl /*36px*/
   mb-6
+  md:text-[58px]
+  md:leading-[58px]
 }
 
 .hero-main-p {
@@ -60,6 +78,10 @@
  px-6
  mt-10
  mb-[120px]
+ md:grid-cols-3
+ md:mt-[96px]
+ md:mb-[96px]
+ md:px-10
 }
 
 .product-wapper {

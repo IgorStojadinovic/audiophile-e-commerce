@@ -2,14 +2,17 @@
     @apply
     px-6
     overflow-hidden
+    
     grid
     grid-cols-1
     gap-6
+    md:px-10
   }
 
 .zx9-container{
     @apply
     relative 
+    overflow-hidden
     flex 
     flex-col 
     justify-center 
@@ -19,6 +22,9 @@
   bg-orange-main 
     px-6 py-14 
     rounded-lg
+    md:py-16
+    md:px-32
+    
 }
 
 .zx9-title{
@@ -32,12 +38,18 @@
     w-[60%] 
     leading-10 
     text-center
+    md:mt-16 
+    md:text-[58px] 
+    md:leading-tight
+    md:w-1/2;
 }
 
 .zx9-paragprah {
     @apply
     mb-6
     text-white/80
+    md:px-10
+    md:mb-10
 }
 
 .oval-group-container {
@@ -49,6 +61,8 @@
     items-center 
     absolute 
     top-[-120px]
+    md:h-[944px]
+    md:top-[-35%]
 }
 
 .oval-1 {
@@ -61,6 +75,8 @@
     rounded-full 
     h-[558px] 
     w-[558px]
+    md:h-[994px]
+    md:w-[994px]
 }
 
 .oval-2 {
@@ -73,6 +89,8 @@
     rounded-full 
     h-[320px] 
     w-[320px]
+    md:h-[542px]
+    md:w-[542px]
 }
 
 .oval-3 {
@@ -82,6 +100,8 @@
     rounded-full 
     h-[280px] 
     w-[280px]
+    md:h-[472px]
+    md:w-[472px]
 }
 
 .zx7-container {
@@ -95,6 +115,10 @@
     px-6
     py-[100px]
     rounded-lg
+    md:bg-zx7-tablet 
+    md:bg-cover
+    overflow-hidden
+
 }
 
 .zx7-title {
@@ -110,4 +134,6 @@
     py-10
     px-6
     bg-light-gray
+    mt-6
+    md:mt-0
 }

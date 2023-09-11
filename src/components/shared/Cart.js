@@ -104,7 +104,7 @@ const Cart = () => {
   console.log('CART ITEMS', cart)
   return (
     <>{displayCart  && <div className='bg-black/70 z-0 absolute h-full w-full'>
-      <section className='z-40 mt-8 px-8 py-8 bg-light-gray mx-6 rounded-lg flex flex-col ' >
+      <section className='z-40 mt-8 px-8 py-8 bg-light-gray mx-6 rounded-lg flex flex-col md:w-[50%] md:ml-auto' >
         <div onClick={() => {dispatch(showCart())}} className='w-full flex justify-end  items-center mb-5'>
           <AiOutlineClose size={15} />
         </div>

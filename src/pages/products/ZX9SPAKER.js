@@ -5,6 +5,12 @@ import {addItem,updateQuantity} from "../../store/cartSlice";
 import {Link} from "react-router-dom"
 import { useNavigate } from 'react-router-dom'
 import {FiChevronRight} from 'react-icons/fi';
+import zx7SugM from "../../assets/images/sugestions/zx7-mobile.png"
+import zx7SugT from "../../assets/images/sugestions/zx7-tablet.png"
+import xx59M from "../../assets/images/sugestions/xx559-mobile.png";
+import xx59T from "../../assets/images/sugestions/xx59-tablet.png";
+import xx99M from "../../assets/images/sugestions/xx99-mobile.png";
+import xx99T from "../../assets/images/sugestions/xx99-tablet.png";
 
 const ZX9SPAKER = () => {
     const navigate = useNavigate();
@@ -35,9 +41,10 @@ const ZX9SPAKER = () => {
     },[])
   return (
       <>
-          <section className='px-6 mb-[120px]'>
+          <section className='px-6 pt-6 mb-[120px] '>
+          <Link onClick={() => { navigate(-1) }} className='text-black/50 my-4'>Go Back</Link>
               <figure className='headphone-figure-product '>
-                <Link onClick={() => { navigate(-1) }} className='text-black/50 my-4'>Go Back</Link>
+              
                   <picture className='headphone-picture-product'>
                       <img src={require('../../assets/images/products/zx9-mobile.png')} alt="xx99-mark-2-headpnones" />
                   </picture>
@@ -73,7 +80,7 @@ const ZX9SPAKER = () => {
               </p>
           </section>
 
-          <section className='px-6 mb-[120px]'>
+          <section className='px-6 mb-[120px] md:flex md:justify-between md:w-[70%]'>
               <h2 className='text-2xl uppercase font-semibold mb-6'>In the box</h2>
               <div>
                 <div className='flex mb-2'>
@@ -99,41 +106,91 @@ const ZX9SPAKER = () => {
               </div>
           </section>
           <section className='promo'>
-            <img src={require('../../assets/images/products/zx9-promo-mobile-1.png')} className='rounded-lg' alt="promo"/>
-            <img src={require('../../assets/images/products/zx9-promo-mobile-2.png')} className='rounded-lg' alt="promo"/>
-            <img src={require('../../assets/images/products/zx9-promo-mobile-3.png')} className='rounded-lg' alt="promo"/>
+            <img src={require('../../assets/images/products/zx9-promo-mobile-1.png')} className='rounded-lg md:order-3 md:w-full' alt="promo"/>
+            <img src={require('../../assets/images/products/zx9-promo-mobile-2.png')} className='rounded-lg md:order-1 md:w-full' alt="promo"/>
+            <img src={require('../../assets/images/products/zx9-promo-mobile-3.png')} className='rounded-lg md:order-2 md:row-span-2 md:w-full' alt="promo"/>
           </section>
           <section className='px-6 mb-[120px]'>
             <h2 className='yml-title'>You may also like</h2>
-            <div className="yml-grid"> 
-            <figure className='yml-container'>
+            <div className="yml-grid">
+              <figure className='yml-container'>
                 <picture className='yml-picture'>
-                    <img src={require("../../assets/images/sugestions/zx7-mobile.png")} className='py-3 pt' alt="xx99-mark-2-headpnones"/>
+                  {/* Desktop image 
+                        <source
+                          media="(min-width: 1280px)"
+                          srcSet={zx9Desktop}
+                        />
+                        */}
+                  {/* Tablet image */}
+                  <source
+                    media="(min-width: 768px)"
+                    srcSet={xx99T}
+
+                  />
+                  {/* Mobile image */}
+                  <img
+                    src={xx99M}
+                    alt="footer-promo"
+
+                  />
                 </picture>
-                    <h3 className='uppercase font-semibold text-xl'>ZX7 Speaker</h3>
-                    <Link to="/speakers/speaker-zx7">
-                      <button className='btn-orange'>See product</button>
-                    </Link>
-                   
-            </figure>
-            <figure className='yml-container'>
+                <h3 className='uppercase font-semibold text-xl md:my-10'>XX99 Mark I</h3>
+                <Link to="/headphones/headphone-xx99-mark-1">
+                  <button className='btn-orange'>See product</button>
+                </Link>
+              </figure>
+              <figure className='yml-container'>
                 <picture className='yml-picture'>
-                    <img src={require("../../assets/images/sugestions/xx99-mobile.png")} className='py-3 pt' alt="xx59-mark-headpnones"/>
+                  {/* Desktop image 
+                        <source
+                          media="(min-width: 1280px)"
+                          srcSet={zx9Desktop}
+                        />
+                        */}
+                  {/* Tablet image */}
+                  <source
+                    media="(min-width: 768px)"
+                    srcSet={xx59T}
+
+                  />
+                  {/* Mobile image */}
+                  <img
+                    src={xx59M}
+                    alt="footer-promo"
+
+                  />
                 </picture>
-                    <h3 className='uppercase font-semibold text-xl'>XX99 mark I</h3>
-                    <Link to="/headphones/headphone-xx99-mark-1">
-                      <button className='btn-orange'>See product</button>
-                    </Link> 
-            </figure>
-            <figure className='yml-container'>
+                <h3 className='uppercase font-semibold text-xl md:my-10'>XX59</h3>
+                <Link to="/headphones/headphone-xx59">
+                  <button className='btn-orange'>See product</button>
+                </Link>
+              </figure>
+              <figure className='yml-container'>
                 <picture className='yml-picture'>
-                    <img src={require("../../assets/images/sugestions/xx559-mobile.png")} className='py-3 pt' alt="zx9-speakers"/>
+                  {/* Desktop image 
+                        <source
+                          media="(min-width: 1280px)"
+                          srcSet={zx9Desktop}
+                        />
+                        */}
+                  {/* Tablet image */}
+                  <source
+                    media="(min-width: 768px)"
+                    srcSet={zx7SugT}
+
+                  />
+                  {/* Mobile image */}
+                  <img
+                    src={zx7SugM}
+                    alt="footer-promo"
+
+                  />
                 </picture>
-                    <h3 className='uppercase font-semibold text-xl'>XX59</h3>
-                    <Link to="/headphones/headphone-xx59">
-                      <button className='btn-orange'>See product</button>
-                    </Link>
-            </figure>
+                <h3 className='uppercase font-semibold text-xl md:my-10'>ZX7 Speaker</h3>
+                <Link to="/speakers/speaker-zx7">
+                  <button className='btn-orange'>See product</button>
+                </Link>
+              </figure>
             </div>
           </section>
       <section className='products-sections'>

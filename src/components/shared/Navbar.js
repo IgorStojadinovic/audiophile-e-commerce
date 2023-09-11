@@ -25,34 +25,46 @@ const Navbar = () => {
    
   return (
     <>
-    <nav className={!isActiveHome ? 'navbar' : 'navbar-absolute'}>
-      <ul className='nav-list'>
-        <li className='nav-list-item' onClick={() => {setShowMenu(!showMenu)}}><img src={MenuIcon} alt="menu" /></li>
-        <li className='nav-list-item'><img src={Logo} alt="logo" /></li>
-        <li onClick={() => (dispatch(showCart()))} className='z-40'>
-          <img src={Cart} alt="cart-icon" />  
-        </li>
-        {(cartStatus && cart.length > 0) && <div className='absolute right-5 top-7'>
-        <span className="relative flex h-3 w-3 z-0">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
-          </span>
-        </div>}
-        
-        
-      </ul>
-    </nav> 
-    {showMenu &&   
-    <div className=''>
-    <section className='products-sections bg-white'>
+    {isActiveHome ?
+    <nav className="navbar-absolute">
+        <ul className='nav-list-absolute'>
+          <li className='nav-list-item' onClick={() => {setShowMenu(!showMenu)}}><img src={MenuIcon} alt="menu" /></li>
+          <li className='nav-list-item'><img src={Logo} alt="logo" /></li>
+          <li onClick={() => (dispatch(showCart()))} className='z-40'>
+            <img src={Cart} alt="cart-icon" />  
+          </li>
+          {(cartStatus && cart.length > 0) && <div className='absolute right-5 top-7'>
+          <span className="relative flex h-3 w-3 z-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
+            </span>
+          </div>}
+        </ul>
+      </nav> :
+       <nav className="navbar">
+       <ul className='nav-list'>
+         <li className='nav-list-item' onClick={() => {setShowMenu(!showMenu)}}><img src={MenuIcon} alt="menu" /></li>
+         <li className='nav-list-item'><img src={Logo} alt="logo" /></li>
+         <li onClick={() => (dispatch(showCart()))} className='z-40'>
+           <img src={Cart} alt="cart-icon" />  
+         </li>
+         {(cartStatus && cart.length > 0) && <div className='absolute right-5 top-7'>
+         <span className="relative flex h-3 w-3 z-0">
+             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
+             <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
+           </span>
+         </div>}
+       </ul>
+     </nav>
+       }
+    <div className= {showMenu ?' z-[50] absolute transition ease-in-out delay-150  translate-x-[-1000px] w-full top-[145px] md:top-[200px]  h-[2000px]' : " z-[50] absolute transition ease-in-out delay-150  translate-x-0  w-full top-[145px] md:top-[200px] bg-black/50 h-[2000px]"}>
+    <section className='products-sections bg-white pt-10 md:mt-0'>
       <Link to="headphones" onClick={() => { setShowMenu(!showMenu)}}>
         <div className='product-wapper'>
           <div className='product-container'>
-            <img src={require('../../assets/images/headphone-mobile.png')}/>
+            <img src={require('../../assets/images/headphone-mobile.png')} alt="headphone-icon"/>
             <h2 className='uppercase font-semibold tracking-widest'>Headphones</h2>
-            
               <button className='btn-link mb-4 '>Shop <FiChevronRight className='ml-1 hover:text-orange-600'/></button>
-            
           </div>
           <div className='product-block-element'></div>
         </div>
@@ -60,11 +72,9 @@ const Navbar = () => {
         <Link to="speakers" onClick={() => { setShowMenu(!showMenu)}}>
           <div className='product-wapper'>
             <div className='product-container'>
-              <img src={require('../../assets/images/speaker-mobile.png')}/>
+              <img src={require('../../assets/images/speaker-mobile.png')} alt="speaker-icon"/>
               <h2 className='uppercase font-semibold tracking-widest'>Speakers</h2>
-            
                 <button className='btn-link mb-4 '>Shop <FiChevronRight className='ml-1 hover:text-orange-600'/></button>
-              
             </div>
             <div className='product-block-element'></div>
           </div>
@@ -72,7 +82,7 @@ const Navbar = () => {
         <Link to="earphones"onClick={() => { setShowMenu(!showMenu)}} >
         <div className='product-wapper'>
           <div className='product-container'>
-            <img src={require('../../assets/images/earphones-mobile.png')}/>
+            <img src={require('../../assets/images/earphones-mobile.png')} alt='eaphones-icon'/>
             <h2 className='uppercase font-semibold tracking-widest'>Earphones</h2>
               <button className='btn-link mb-4 '>Shop <FiChevronRight className='ml-1 hover:text-orange-600'/></button>
           </div>
@@ -81,8 +91,6 @@ const Navbar = () => {
         </Link>
       </section>
       </div>
-}
-   
     </>
   )
 }
