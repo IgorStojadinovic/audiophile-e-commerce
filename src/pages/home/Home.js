@@ -9,6 +9,7 @@ import {
 import zx9Mobile from "../../assets/images/zx9-mobile.png";
 import zx9Tablet from "../../assets/images/zx9-tablet.png";
 import zx9Desktop from "../../assets/images/zx9-desktop.png"
+import heroDesktop from "../../assets/images/hero-desktop.png"
 
 const Home = () => {
   const summary = useSelector(getSummary);
@@ -33,7 +34,8 @@ const Home = () => {
             </Link>
             
           </div>
-          <div className='-z-10 md:bg-black/50 absolute w-full h-full'></div>
+          <img src={heroDesktop} className='h-full -z-5 xl:flex md:hidden xs:hidden '/>
+          <div className='z-10  absolute w-full h-full  md:-z-10 md:bg-black/40  xl:z-20 '></div>
         </div>
       </section>
       <section className='products-sections'>

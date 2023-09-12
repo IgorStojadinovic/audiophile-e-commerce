@@ -1,4 +1,4 @@
-.navbar-absolute{
+.navbar-absolute {
     @apply
     absolute
     z-40
@@ -9,19 +9,24 @@
     border-white/50
     bg-black 
     md:relative
+    md:px-10
+    xl:px-40
+    xl:border-none
+    
 }
 
-.navbar{
+.navbar {
     @apply 
     w-full
     px-6
     h-[80px]
     bg-black
-    md:border-none 
+    md:border-none
+    md:px-10
 }
 
 
-.nav-list{
+.nav-list-mobile{
     @apply
     flex
     justify-between  
@@ -29,6 +34,30 @@
     h-full  
     border-b-[1px]
     border-white/50
+    lg:hidden
+    
+}
+
+.nav-list-desktop{
+    @apply
+    flex
+    justify-between  
+    items-center
+    h-full  
+    border-b-[1px]
+    border-white/50
+    xs:hidden
+    lg:flex
+}
+
+.nav-list-desktop-absolute{
+    @apply
+    flex
+    justify-between  
+    items-center
+    h-full  
+    xs:hidden
+    lg:flex
 }
 
 .nav-list-absolute{
@@ -37,7 +66,7 @@
     justify-between  
     items-center
     h-full  
-  
+    lg:hidden
 }
 
 .page-header {
