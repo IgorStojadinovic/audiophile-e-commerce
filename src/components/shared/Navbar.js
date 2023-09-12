@@ -66,7 +66,7 @@ const Navbar = () => {
             <li onClick={() => (dispatch(showCart()))} className='z-40'>
               <img src={Cart} alt="cart-icon" />
             </li>
-            {(cartStatus && cart.length > 0) && <div className='absolute right-5 top-6 md:hidden'>
+            {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-7 '>
               <span className="relative flex h-3 w-3 z-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
