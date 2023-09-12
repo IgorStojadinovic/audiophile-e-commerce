@@ -5,8 +5,10 @@
 A E-commerce website still in progress.
 What's currently done:
 - Mobile view
+- Tablet view
 - Redux state managment
 - Cart functionality
 - Checkout functionality
+
 
 
