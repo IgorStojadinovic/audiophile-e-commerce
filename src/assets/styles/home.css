@@ -9,16 +9,17 @@
     bg-hero-mobile
 }
 */
+
 .hero-container {
   @apply
+  w-full
   h-screen
   px-6
   bg-hero-mobile 
   bg-center 
   bg-cover
   md:bg-hero-tablet
-  xl:bg-none
-  xl:bg-black
+  xl:bg-hero-desktop
   overflow-hidden
   xl:px-40
 } 
@@ -29,6 +30,7 @@
   items-center
   justify-center
   h-full
+  xl:justify-start
   
 }
 
@@ -42,7 +44,12 @@
   mt-[108px]
   md:mt-0
   md:mx-48
-  z-50
+  xl:mx-0
+  xl:w-[30%]
+  xl:items-start
+  xl:text-left
+  z-20
+
 }
 
 .hero-main-subheading {
@@ -53,6 +60,7 @@
   uppercase
   text-sm /*14px*/
   mb-4
+  xl:text-lg
 }
 
 .hero-main-title {
@@ -65,6 +73,8 @@
   mb-6
   md:text-[58px]
   md:leading-[58px]
+  xl:text-[78px]
+  xl:leading-[78px]
 }
 
 .hero-main-p {
@@ -72,6 +82,8 @@
   @apply
     text-white/75
     mb-7
+    xl:pr-28
+    xl:text-lg
 }
 
 .products-sections {
@@ -86,7 +98,11 @@
  md:mt-[96px]
  md:mb-[96px]
  md:px-10
+ md:gap-5
  xl:px-40
+ xl:gap-20
+ xl:mt-[120px]
+ xl:mb-[150px]
 }
 
 .product-wapper {

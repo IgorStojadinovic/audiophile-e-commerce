@@ -2,7 +2,6 @@
     @apply
     px-6
     overflow-hidden
-    
     grid
     grid-cols-1
     gap-6
@@ -25,6 +24,9 @@
     rounded-lg
     md:py-16
     md:px-32
+    xl:flex-row
+    xl:pb-0
+    xl:justify-between
     
 }
 
@@ -42,7 +44,8 @@
     md:mt-16 
     md:text-[58px] 
     md:leading-tight
-    md:w-1/2;
+    md:w-1/2
+    xl:text-left
 }
 
 .zx9-paragprah {
@@ -51,6 +54,9 @@
     text-white/80
     md:px-10
     md:mb-10
+    xl:text-left
+    xl:px-0
+    xl:pr-40
 }
 
 .oval-group-container {
@@ -64,10 +70,12 @@
     top-[-120px]
     md:h-[944px]
     md:top-[-35%]
+    xl:left-[-150px]
 }
 
 .oval-1 {
     @apply
+    z-10  
     flex 
     justify-center 
     items-center 
@@ -82,6 +90,7 @@
 
 .oval-2 {
     @apply
+    z-10  
     flex 
     justify-center 
     items-center 
