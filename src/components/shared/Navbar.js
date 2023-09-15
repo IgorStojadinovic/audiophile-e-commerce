@@ -28,6 +28,19 @@ const Navbar = () => {
       {isActiveHome ?
       <div className='relative'>
         <nav className="navbar-absolute">
+        <ul className='nav-list-mobile '>
+            <li className='nav-list-item' onClick={() => { setShowMenu(!showMenu) }}><img src={MenuIcon} alt="menu" /></li>
+            <li className='nav-list-item'><Link to="/"><img src={Logo} alt="logo" /></Link></li>
+            <li onClick={() => (dispatch(showCart()))} className='z-40 hover:cursor-pointer'>
+              <img src={Cart} alt="cart-icon"/>
+            </li>
+            {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-7 '>
+              <span className="relative flex h-3 w-3 z-0">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
+              </span>
+            </div>}
+          </ul>
               <div className='nav-list-desktop-absolute'>
                 <li className='nav-list-item'><Link to="/"><img src={Logo} alt="logo" /></Link></li>
                 <ul className='uppercase font-semibold text-white w-[50%] flex justify-between'>

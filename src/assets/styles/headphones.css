@@ -7,6 +7,7 @@
     text-center
     mt-16
     md:mb-32
+    xl:flex-row
 
 }
 .headphone-fig-caption{
@@ -16,6 +17,8 @@
     justify-center
     items-center
     md:mx-24
+    xl:w-[50%]
+    xl:p-20
 }
 
 .headphone-picture {
@@ -30,6 +33,11 @@
     pt-10
     pb-[68px]
     px-[54px]
+    xl:px-0
+    xl:py-0
+    xl:mb-0
+    xl:max-h-[100%]
+    xl:w-[50%]
 }
 
 .headphone-subheading {

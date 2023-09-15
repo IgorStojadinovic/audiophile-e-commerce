@@ -151,7 +151,7 @@ const Home = () => {
             <img
               src={zx9Mobile}
               alt="footer-promo"
-              className="rounded-lg w-full "
+              className="rounded-lg w-full xl:absolute xl:h-[493px] xl:w-[493px] bottom-0"
             />
           </picture>
           <div className="flex flex-col justify-center items-center xl:w-[40%] xl:items-start ">
@@ -181,10 +181,21 @@ const Home = () => {
         </div>
         <div className="grid gril-col-1 md:grid-cols-2 gap-6">
           <div className=" rounded-lg ">
-            <img
-              src={require("../../assets/images/yx1-mobile.png")}
-              className="rounded-lg w-full"
-            />
+          <picture className=" rounded-lg "> 
+              <source
+                media="(min-width: 1280px)"
+                srcSet={require("../../assets/images/yx1-desktop.png")}
+              />
+              <source
+                media="(min-width: 768px)"
+                srcSet={require("../../assets/images/products-section/products-section-earphones-tablet.png")}
+              />
+              <img
+              className=" rounded-lg"
+                src={require("../../assets/images/yx1-mobile.png")}
+                alt="promo"
+              />
+            </picture>
           </div>
           <div className="yx1-container rounded-lg">
             <h2 className="zx7-title">yx1 earphones</h2>

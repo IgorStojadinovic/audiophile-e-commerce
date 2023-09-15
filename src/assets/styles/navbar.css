@@ -25,6 +25,8 @@
     h-full  
     border-b-[1px]
     border-white/50
+    py-8
+    px-6
     lg:hidden
     
 }

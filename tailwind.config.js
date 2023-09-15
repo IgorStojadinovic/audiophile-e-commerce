@@ -14,6 +14,7 @@ module.exports = {
       'hero-mobile': "url('/src/assets/images/hero-mobile.png')",
       'zx7-mobile': "url('/src/assets/images/zx7-mobile.png')",
       'zx7-tablet':"url('/src/assets/images/zx7-tablet.png')",
+      'zx7-desktop':"url('/src/assets/images/zx7-desktop2.jpg')",
       'footer-mobile': "url('/src/assets/images/footer-img-mobile.png')"
      },
      screens:{

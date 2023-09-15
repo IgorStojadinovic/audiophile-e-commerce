@@ -8,7 +8,7 @@ const Headphones = () => {
   return (
     <>
     <h1 className='page-header'>Headphones</h1>
-    <section className='px-6 mb-[120px] md:px-10'>
+    <section className='px-6 mb-[120px] md:px-10 xl:px-40'>
         
         <figure className='headphone-figure'>
             <picture className='headphone-picture'>
