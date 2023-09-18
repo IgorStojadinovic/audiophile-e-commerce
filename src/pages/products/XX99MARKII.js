@@ -148,21 +148,42 @@ const XX99MARKII = () => {
         </div>
       </section>
       <section className="promo">
+        <picture className="rounded-lg md:order-3 md:w-full">
+        <source
+            media="(min-width: 1280px)"             
+            srcSet={require("../../assets/images/products/headphones-promo-desktop-1.png")}      
+        />
         <img
           src={require("../../assets/images/products/headphones-promo-mobile-1.png")}
-          className="rounded-lg md:order-3 md:w-full"
+          className="w-full rounded-lg"
           alt="promo"
         />
+        </picture>
+        <picture  className="rounded-lg md:order-1 md:w-full">
+          <source
+            media="(min-width: 1280px)"    
+            srcSet={require("../../assets/images/products/headphones-promo-desktop-2.png")}      
+          />
+       
         <img
           src={require("../../assets/images/products/headphones-promo-mobile-2.png")}
-          className="rounded-lg md:order-1 md:w-full"
+         className="w-full rounded-lg"
           alt="promo"
         />
+        </picture>
+       
+       <picture className="rounded-lg md:order-2 md:row-span-2 md:w-full">
+        <source
+            media="(min-width: 1280px)"
+            srcSet={require("../../assets/images/products/xx99II-promo-desktop.png")}      
+          />
         <img
-          src={require("../../assets/images/products/headphones-promo-mobile-3.png")}
-          className="rounded-lg md:order-2 md:row-span-2 md:w-full"
-          alt="promo"
-        />
+            src={require("../../assets/images/products/headphones-promo-mobile-3.png")}
+            className="rounded-lg w-full "
+            alt="promo"
+          />
+       </picture>
+        
       </section>
       <section className="px-6 mb-[120px] xl:px-40 2xl:px-80">
         <h2 className="yml-title">You may also like</h2>

@@ -31,7 +31,7 @@ const Navbar = () => {
             <li onClick={() => (dispatch(showCart()))} className='z-40 hover:cursor-pointer'>
               <img src={Cart} alt="cart-icon"/>
             </li>
-            {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-7'>
+            {(cartStatus && cart.length > 0) && <div className='absolute right-5 top-8 md:right-[60px]'>
               <span className="relative flex h-3 w-3 z-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 </ul>
                 <div onClick={() => (dispatch(showCart()))} className='z-40 hover:cursor-pointer'>
                   <img src={Cart} alt="cart-icon" />
-                  {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-11 xl:right-[180px] 2xl:right-[340px] '>
+                  {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-11 md:right-[60px] xl:right-[180px] 2xl:right-[340px] '>
                     <span className="relative flex h-3 w-3 z-0">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
                       <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
@@ -63,10 +63,10 @@ const Navbar = () => {
           <ul className='nav-list-mobile '>
             <li className='nav-list-item' onClick={() => { setShowMenu(!showMenu) }}><img src={MenuIcon} alt="menu" /></li>
             <li className='nav-list-item'><Link to="/"><img src={Logo} alt="logo" /></Link></li>
-            <li onClick={() => (dispatch(showCart()))} className='z-40 hover:bg-white'>
+            <li onClick={() => (dispatch(showCart()))} className='z-40 '>
               <img src={Cart} alt="cart-icon"/>
             </li>
-            {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-7 '>
+            {(cartStatus && cart.length > 0) && <div className='absolute right-11 top-8  md:right-[60px] md:top-8' >
               <span className="relative flex h-3 w-3 z-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
@@ -84,7 +84,7 @@ const Navbar = () => {
             </ul>
             <div onClick={() => (dispatch(showCart()))} className='z-40 hover:cursor-pointer'>
               <img src={Cart} alt="cart-icon" />
-              {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-11 xl:right-[180px] 2xl:right-[340px] '>
+              {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-11  lg:right-[60px] xl:right-[180px] 2xl:right-[340px] '>
                 <span className="relative flex h-3 w-3 z-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>

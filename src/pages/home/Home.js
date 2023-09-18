@@ -32,7 +32,7 @@ const Home = () => {
           <div className="product-container">
             <picture>
             <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/product-section-headphone-mobile.png")} />
-              <img className='2xl:h-[150px] xl:h-[120px] md:h-[100px]'
+              <img className=' xl:h-[120px] md:h-[100px]'
                 src={require("../../assets/images/products-section/products-section-headphone-desktop.png")}
                 alt="footer-promo"
               />
@@ -57,7 +57,7 @@ const Home = () => {
           <div className="product-container">
             <picture>
             <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/prodcut-section-speaker-mobile.png")} />
-              <img className='2xl:h-[150px] xl:h-[120px] md:h-[100px]'
+              <img className=' xl:h-[120px] md:h-[100px]'
                 src={require("../../assets/images/products-section/product-section-speaker-desktop.png")}
                 alt="footer-promo"
               />
@@ -84,8 +84,8 @@ const Home = () => {
             <picture>
             <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/products-section-earphones-mobile.png")} />
               
-              <img className='2xl:h-[150px] xl:h-[120px] md:h-[100px]'
-                src={require("../../assets/images/products-section/products-section-earphoens-desktop.png")}
+              <img className=' xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/yx-1-desktop.png")}
                 alt="footer-promo"
               />
             </picture>
