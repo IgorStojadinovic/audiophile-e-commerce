@@ -46,7 +46,7 @@ const YX1 = () => {
   }, []);
   return (
     <>
-      <section className="px-6 pt-6 mb-[120px] md:px-10">
+      <section className="px-6 pt-6 mb-[120px] md:px-10 xl:px-40 2xl:px-80">
         <Link
           onClick={() => {
             navigate(-1);
@@ -105,7 +105,7 @@ const YX1 = () => {
           </figcaption>
         </figure>
       </section>
-      <section className="px-6 mb-[120px] md:px-10">
+      <section className="px-6 mb-[120px] md:px-10 xl:px-40 2xl:px-80">
         <h2 className="text-2xl uppercase font-semibold mb-6">Features</h2>
         <p className="mb-4 text-black/50">
           Experience unrivalled stereo sound thanks to innovative acoustic
@@ -124,7 +124,7 @@ const YX1 = () => {
         </p>
       </section>
 
-      <section className="px-6 mb-[120px] md:px-10 md:flex md:justify-between md:w-[70%]">
+      <section className="px-6 mb-[120px] md:px-10 md:flex md:justify-between md:w-[70%] xl:px-40 2xl:px-80">
         <h2 className="text-2xl uppercase font-semibold mb-6">In the box</h2>
         <div>
           <div className="flex mb-2">
@@ -166,7 +166,7 @@ const YX1 = () => {
           alt="promo"
         />
       </section>
-      <section className="px-6 mb-[120px]">
+      <section className="px-6 mb-[120px] xl:px-40 2xl:px-80">
         <h2 className="yml-title">You may also like</h2>
         <div className="yml-grid">
           <figure className="yml-container">

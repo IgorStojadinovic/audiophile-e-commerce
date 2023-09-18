@@ -13,6 +13,7 @@ import xx99M from "../../assets/images/sugestions/xx99-mobile.png";
 import xx99T from "../../assets/images/sugestions/xx99-tablet.png";
 
 const XX59 = () => {
+  
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const quantity = useSelector(getXX59Quantity);
@@ -41,12 +42,11 @@ const XX59 = () => {
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0 });
   };
-  useEffect(() => {
-    scrollTop();
-  }, []);
+  
+
   return (
     <>
-      <section className="px-6 pt-6 mb-[120px]">
+      <section className="px-6 pt-6 mb-[120px] xl:px-40 2xl:px-80">
         <Link
           onClick={() => {
             navigate(-1);
@@ -102,7 +102,7 @@ const XX59 = () => {
           </figcaption>
         </figure>
       </section>
-      <section className="px-6 mb-[120px]">
+      <section className="px-6 mb-[120px] xl:px-40 2xl:px-80">
         <h2 className="text-2xl uppercase font-semibold mb-6">Features</h2>
         <p className="mb-4 text-black/50">
           These headphones have been created from durable, high-quality
@@ -122,7 +122,7 @@ const XX59 = () => {
         </p>
       </section>
 
-      <section className="px-6 mb-[120px] md:flex md:justify-between md:w-[70%]">
+      <section className="px-6 mb-[120px] md:flex md:justify-between md:w-[70%] xl:px-40 2xl:px-80">
         <h2 className="text-2xl uppercase font-semibold mb-6">In the box</h2>
         <div>
           <div className="flex mb-2">
@@ -160,20 +160,12 @@ const XX59 = () => {
           alt="promo"
         />
       </section>
-      <section className="px-6 mb-[120px]">
+      <section className="px-6 mb-[120px] xl:px-40 2xl:px-80">
         <h2 className="yml-title">You may also like</h2>
         <div className="yml-grid">
           <figure className="yml-container">
             <picture className="yml-picture">
-              {/* Desktop image 
-                        <source
-                          media="(min-width: 1280px)"
-                          srcSet={zx9Desktop}
-                        />
-                        */}
-              {/* Tablet image */}
               <source media="(min-width: 768px)" srcSet={xx99T} />
-              {/* Mobile image */}
               <img src={xx99M} alt="footer-promo" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">
@@ -185,15 +177,7 @@ const XX59 = () => {
           </figure>
           <figure className="yml-container">
             <picture className="yml-picture">
-              {/* Desktop image 
-                        <source
-                          media="(min-width: 1280px)"
-                          srcSet={zx9Desktop}
-                        />
-                        */}
-              {/* Tablet image */}
               <source media="(min-width: 768px)" srcSet={xx99MIIT} />
-              {/* Mobile image */}
               <img src={xx99MIIM} alt="footer-promo" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">
@@ -205,15 +189,7 @@ const XX59 = () => {
           </figure>
           <figure className="yml-container">
             <picture className="yml-picture">
-              {/* Desktop image 
-                        <source
-                          media="(min-width: 1280px)"
-                          srcSet={zx9Desktop}
-                        />
-                        */}
-              {/* Tablet image */}
               <source media="(min-width: 768px)" srcSet={zx9SugT} />
-              {/* Mobile image */}
               <img src={zx9SugM} alt="footer-promo" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">

@@ -16,6 +16,7 @@
     items-center
     md:w-[50%]
     md:items-start
+
    
 }
 
@@ -93,6 +94,7 @@
     text-2xl 
     hover:bg-black/10  
     h-full
+    hover:cursor-pointer
     
 }
 
@@ -117,20 +119,8 @@
     text-xl 
     hover:bg-black/10 
     h-full
+    hover:cursor-pointer
 }
-/*
-.promo {
-    @apply
-    flex 
-    flex-col 
-    justify-between 
-    items-center 
-    h-[756px] 
-    mb-[120px]
-
-    md:px-10
-}
-*/
 
 .promo {
     @apply
@@ -143,6 +133,8 @@
     md:mb-[120px]
     md:px-10
     md:mx-0
+    xl:px-40
+    2xl:px-80
     
 }
 

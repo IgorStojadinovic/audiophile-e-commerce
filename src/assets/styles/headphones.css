@@ -17,8 +17,11 @@
     justify-center
     items-center
     md:mx-24
-    xl:w-[50%]
-    xl:p-20
+    xl:w-[45%]
+    xl:items-start
+    xl:text-left
+    
+
 }
 
 .headphone-picture {
@@ -36,8 +39,8 @@
     xl:px-0
     xl:py-0
     xl:mb-0
-    xl:max-h-[100%]
-    xl:w-[50%]
+    xl:w-[65%]
+    xl:h-[560px]
 }
 
 .headphone-subheading {
@@ -53,10 +56,11 @@
     @apply
     uppercase
     text-[28px]
-    font-semibold
     mb-6
-    md:w-[40%]
     md:text-4xl
+    md:w-[40%]
+    xl:w-[70%]
+  
 }
 
 .headphone-text {

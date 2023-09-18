@@ -22,6 +22,7 @@
   xl:bg-hero-desktop
   overflow-hidden
   xl:px-40
+  2xl:px-80
 } 
 
 .hero-wapper {
@@ -82,8 +83,9 @@
   @apply
     text-white/75
     mb-7
-    xl:pr-28
+    xl:pr-16
     xl:text-lg
+    
 }
 
 .products-sections {
@@ -103,6 +105,7 @@
  xl:gap-20
  xl:mt-[120px]
  xl:mb-[150px]
+ 2xl:px-80
 }
 
 .product-wapper {

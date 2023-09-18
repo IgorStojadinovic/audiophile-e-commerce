@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
-import {AiOutlineClose} from 'react-icons/ai';
+import { Link,useLocation } from 'react-router-dom';
+import { AiOutlineClose } from 'react-icons/ai';
 import {
   getCart,
   removeAll,
@@ -19,7 +19,11 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 
 const Cart = () => {
+
   const dispatch = useDispatch();
+
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   let cart = useSelector(getCart);
   let displayCart = useSelector(getShowCart);
@@ -37,36 +41,7 @@ const Cart = () => {
   const [showXXMARKII, setShowXXMARKII] = useState(false);
   const [showXXMARKI, setShowXXMARKI] = useState(false);
 
-/*
-
-  const addItems = (itemName, quantity) => {
-    if (itemName === 'yx1' && quantity !== 0) {
-      const item = { name: 'yx1', total: 599 * quantity, defaultPrice: 599, quantity: quantity }
-      dispatch(addItem(item));
-    }
-
-    if (itemName === 'xx99mkII' && quantity !== 0) {
-      const item = { name: 'xx99 mk II', total: 2.990, defaultPrice: 599, quantity: quantity }
-      dispatch(addItem(item));
-    }
-
-    if (itemName === 'xx59' && quantity !== 0) {
-      const item = { name: 'xx59', total: 899, defaultPrice: 599, quantity: quantity }
-      dispatch(addItem(item));
-    }
-
-    if (itemName === 'zx9' && quantity !== 0) {
-      const item = { name: 'zx9', total: 4500, defaultPrice: 4500, quantity: quantity }
-      dispatch(addItem(item));
-    }
-
-    if (itemName === 'zx7' && quantity !== 0) {
-      const item = { name: 'zx', total: 3500, defaultPrice: 3500, quantity: quantity }
-      dispatch(addItem(item));
-    }
-  }
-*/
-
+  const isActiveHome = currentPath !== '/' || currentPath !== '/headphones' || currentPath !== '/speakers' || currentPath !== "/earphones";
   useEffect(() => {
     if (cart.length) {
       cart.map((item) => {
@@ -95,179 +70,172 @@ const Cart = () => {
       })
     }
   }, [cart, yxQuantity])
-  /*
-  useEffect(() => {
-    displayCart
-      ? (document.body.style.overflow="hidden")
-      : (document.body.style.overflow="scroll");
-  }, [displayCart]);
-*/
-  console.log('CART ITEMS', cart)
+
+ 
+
+
   return (
-    <>{displayCart  && <div className='bg-black/70 z-30 absolute h-full w-full'>
-      <section className='z-40 mt-8 px-8 py-8 bg-light-gray mx-6 rounded-lg flex flex-col md:w-[50%] md:mt-32 md:ml-auto xl:mt-32 xl:mr-40 xl:w-[20%]' >
-        <div onClick={() => {dispatch(showCart())}} className='w-full flex justify-end  items-center mb-5'>
+    <>{displayCart && <div className='bg-black/70 z-30 absolute h-full w-full top-0'>
+      <section className= 'z-40 mt-8 px-8 py-8 bg-light-gray mx-6 rounded-lg flex flex-col md:w-[50%] md:mt-32 md:ml-auto xl:mt-32 xl:mr-40 xl:w-[20%] 2xl:mr-80' >
+        <div onClick={() => { dispatch(showCart()); }} className='w-full flex justify-end  items-center mb-5 hover:cursor-pointer'>
           <AiOutlineClose size={15} />
         </div>
-     
-      <div className='flex justify-between items-center mb-8'>
-        
-        <p className='font-semibold'>CART {cart.length ? <>( {cart.length} )</> : ""}</p>
-        <a onClick={() => { dispatch(removeAll()) }}>Remove all</a></div>
-      {(showEarphones && yxQuantity > 0) && <div className='flex justify-between items-center mt-6'>
-        <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px] '>
-          <img src={require('../../assets/images/earphones-page/yx1-wireless-mobile.png')} />
+        <div className='flex justify-between items-center mb-8'>
+          <p className='font-semibold'>CART {cart.length ? <>( {cart.length} )</> : ""}</p>
+          <a className="hover:cursor-pointer" onClick={() => { dispatch(removeAll()) }}>Remove all</a>
         </div>
-        <div>
-          <h1 className='text-xl font-semibold'>YX1</h1>
-          <p className='font-semibold text-black/40'>$ 599</p>
-        </div>
-        <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
-          <div className='add-to-cart-wapper w-full '>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'remove-yx1', defaultPrice: 599, name: 'yx1' })) }} className='subtract-btn' >
-              -
-            </div>
-            <div className='quantity'>
-              {yxQuantity}
-            </div>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'add-yx1', defaultPrice: 599, name: 'yx1' })) }} className='add-btn'>
-              +
+        {(showEarphones && yxQuantity > 0) && <div className='flex justify-between items-center mt-6'>
+          <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px] '>
+            <img src={require('../../assets/images/earphones-page/yx1-wireless-mobile.png')} />
+          </div>
+          <div>
+            <h1 className='text-xl font-semibold'>YX1</h1>
+            <p className='font-semibold text-black/40'>$ 599</p>
+          </div>
+          <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
+            <div className='add-to-cart-wapper w-full '>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'remove-yx1', defaultPrice: 599, name: 'yx1' })) }} className='subtract-btn' >
+                -
+              </div>
+              <div className='quantity'>
+                {yxQuantity}
+              </div>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'add-yx1', defaultPrice: 599, name: 'yx1' })) }} className='add-btn'>
+                +
+              </div>
             </div>
           </div>
-        </div>
-      </div>}
-      {(showXX59 && xx59Quantity > 0) && <div className='flex justify-between items-center  mt-6'>
-        <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px]'>
-          <img src={require('../../assets/images/heaphone-page/xx59-mobile.png')} />
-        </div>
-        <div>
-          <h1 className='text-xl font-semibold'>XX59</h1>
-          <p className='font-semibold text-black/40'>$ 899</p>
-        </div>
-        <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
-          <div className='add-to-cart-wapper w-full '>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'remove-xx59', defaultPrice: 899, name: 'xx59' })) }} className='subtract-btn' >
-              -
-            </div>
-            <div className='quantity'>
-              {xx59Quantity}
-            </div>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'add-xx59', defaultPrice: 899, name: 'xx59' })) }} className='add-btn'>
-              +
+        </div>}
+        {(showXX59 && xx59Quantity > 0) && <div className='flex justify-between items-center  mt-6'>
+          <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px]'>
+            <img src={require('../../assets/images/heaphone-page/xx59-mobile.png')} />
+          </div>
+          <div>
+            <h1 className='text-xl font-semibold'>XX59</h1>
+            <p className='font-semibold text-black/40'>$ 899</p>
+          </div>
+          <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
+            <div className='add-to-cart-wapper w-full '>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'remove-xx59', defaultPrice: 899, name: 'xx59' })) }} className='subtract-btn' >
+                -
+              </div>
+              <div className='quantity'>
+                {xx59Quantity}
+              </div>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'add-xx59', defaultPrice: 899, name: 'xx59' })) }} className='add-btn'>
+                +
+              </div>
             </div>
           </div>
-        </div>
-      </div>}
+        </div>}
 
-      {(showXXMARKI && xx99mkIQuantity > 0) && <div className='flex justify-between items-center  mt-6'>
-        <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px]'>
-          <img src={require('../../assets/images/heaphone-page/xx-99-mark-I-mobile.png')} />
-        </div>
-        <div>
-          <h1 className='text-xl font-semibold'>XX99 I</h1>
-          <p className='font-semibold text-black/40'>$ 1,750</p>
-        </div>
-        <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
-          <div className='add-to-cart-wapper w-full '>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'remove-markI', defaultPrice: 1750, name: 'xx99mkI' })) }} className='subtract-btn' >
-              -
-            </div>
-            <div className='quantity'>
-              {xx99mkIQuantity}
-            </div>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'add-markI', defaultPrice: 1750, name: 'xx99mkI' })) }} className='add-btn'>
-              +
+        {(showXXMARKI && xx99mkIQuantity > 0) && <div className='flex justify-between items-center  mt-6'>
+          <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px]'>
+            <img src={require('../../assets/images/heaphone-page/xx-99-mark-I-mobile.png')} />
+          </div>
+          <div>
+            <h1 className='text-xl font-semibold'>XX99 I</h1>
+            <p className='font-semibold text-black/40'>$ 1,750</p>
+          </div>
+          <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
+            <div className='add-to-cart-wapper w-full '>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'remove-markI', defaultPrice: 1750, name: 'xx99mkI' })) }} className='subtract-btn' >
+                -
+              </div>
+              <div className='quantity'>
+                {xx99mkIQuantity}
+              </div>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'add-markI', defaultPrice: 1750, name: 'xx99mkI' })) }} className='add-btn'>
+                +
+              </div>
             </div>
           </div>
-        </div>
-      </div>}
+        </div>}
 
-      {(showXXMARKII && xx99mkIIQuantity > 0) && <div className='flex justify-between items-center mt-6'>
-        <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px] '>
-          <img src={require('../../assets/images/heaphone-page/xx99-mark-II-mobile.png')} />
-        </div>
-        <div>
-          <h1 className='text-xl font-semibold'>XX99 II</h1>
-          <p className='font-semibold text-black/40'>$ 2,999</p>
-        </div>
-        <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
-          <div className='add-to-cart-wapper w-full '>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'remove-markII', defaultPrice: 2999, name: 'xx99mkII' })) }} className='subtract-btn' >
-              -
-            </div>
-            <div className='quantity'>
-              {xx99mkIIQuantity}
-            </div>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'add-markII', defaultPrice: 2999, name: 'xx99mkII' })); addItem('xx99mkII', xx99mkIIQuantity) }} className='add-btn'>
-              +
+        {(showXXMARKII && xx99mkIIQuantity > 0) && <div className='flex justify-between items-center mt-6'>
+          <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px] '>
+            <img src={require('../../assets/images/heaphone-page/xx99-mark-II-mobile.png')} />
+          </div>
+          <div>
+            <h1 className='text-xl font-semibold'>XX99 II</h1>
+            <p className='font-semibold text-black/40'>$ 2,999</p>
+          </div>
+          <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
+            <div className='add-to-cart-wapper w-full '>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'remove-markII', defaultPrice: 2999, name: 'xx99mkII' })) }} className='subtract-btn' >
+                -
+              </div>
+              <div className='quantity'>
+                {xx99mkIIQuantity}
+              </div>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'add-markII', defaultPrice: 2999, name: 'xx99mkII' })); addItem('xx99mkII', xx99mkIIQuantity) }} className='add-btn'>
+                +
+              </div>
             </div>
           </div>
-        </div>
-      </div>}
+        </div>}
 
 
-      {(showZX9 && zx9Quantity > 0) && <div className='flex justify-between items-center mt-6'>
-        <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px] '>
-          <img src={require('../../assets/images/products/zx9-mobile.png')} />
-        </div>
-        <div>
-          <h1 className='text-xl font-semibold'>ZX9</h1>
-          <p className='font-semibold text-black/40'>$ 4,500</p>
-        </div>
-        <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
-          <div className='add-to-cart-wapper w-full '>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'remove-zx9', defaultPrice: 4500, name: 'zx9' })) }} className='subtract-btn' >
-              -
-            </div>
-            <div className='quantity'>
-              {zx9Quantity}
-            </div>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'add-zx9', defaultPrice: 4500, name: 'zx9' })) }} className='add-btn'>
-              +
+        {(showZX9 && zx9Quantity > 0) && <div className='flex justify-between items-center mt-6'>
+          <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px] '>
+            <img src={require('../../assets/images/products/zx9-mobile.png')} />
+          </div>
+          <div>
+            <h1 className='text-xl font-semibold'>ZX9</h1>
+            <p className='font-semibold text-black/40'>$ 4,500</p>
+          </div>
+          <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
+            <div className='add-to-cart-wapper w-full '>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'remove-zx9', defaultPrice: 4500, name: 'zx9' })) }} className='subtract-btn' >
+                -
+              </div>
+              <div className='quantity'>
+                {zx9Quantity}
+              </div>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'add-zx9', defaultPrice: 4500, name: 'zx9' })) }} className='add-btn'>
+                +
+              </div>
             </div>
           </div>
-        </div>
-      </div>}
+        </div>}
 
-      {(showZX7 && zx7Quantity > 0) && <div className='flex justify-between items-center mt-6'>
-        <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px] '>
-          <img src={require('../../assets/images/products/zx9-mobile.png')} />
-        </div>
-        <div>
-          <h1 className='text-xl font-semibold'>ZX7</h1>
-          <p className='font-semibold text-black/40'>$ 3,500 </p>
-        </div>
-        <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
-          <div className='add-to-cart-wapper w-full '>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'remove-zx7', defaultPrice: 3500, name: 'zx7' })) }} className='subtract-btn' >
-              -
-            </div>
-            <div className='quantity'>
-              {zx7Quantity}
-            </div>
-            <div onClick={() => { dispatch(updateQuantity({ type: 'add-zx7', defaultPrice: 3500, name: 'zx7' })) }} className='add-btn'>
-              +
+        {(showZX7 && zx7Quantity > 0) && <div className='flex justify-between items-center mt-6'>
+          <div className='bg-light-gray p-3 rounded-lg h-[64px] w-[64px] '>
+            <img src={require('../../assets/images/products/zx9-mobile.png')} />
+          </div>
+          <div>
+            <h1 className='text-xl font-semibold'>ZX7</h1>
+            <p className='font-semibold text-black/40'>$ 3,500 </p>
+          </div>
+          <div className='add-to-cart-container w-[40%] h-[40px] shadow-none'>
+            <div className='add-to-cart-wapper w-full '>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'remove-zx7', defaultPrice: 3500, name: 'zx7' })) }} className='subtract-btn' >
+                -
+              </div>
+              <div className='quantity'>
+                {zx7Quantity}
+              </div>
+              <div onClick={() => { dispatch(updateQuantity({ type: 'add-zx7', defaultPrice: 3500, name: 'zx7' })) }} className='add-btn'>
+                +
+              </div>
             </div>
           </div>
+        </div>}
+        <div className='flex justify-between mt-8 font-semibold'>
+          <p className='text-black/30 uppercase'>Total</p>
+          <p>${cart.length > 0 ? cart.map((item) => {
+            return item.total;
+          }).reduce((acc, curr) => acc + curr, 0).toLocaleString() : 0}</p>
         </div>
-      </div>}
-      <div className='flex justify-between mt-8 font-semibold'>
-        <p className='text-black/30 uppercase'>Total</p>
-        <p>${cart.length > 0 ? cart.map((item) => {
-          return item.total;
-        }).reduce((acc, curr) => acc + curr, 0).toLocaleString() : 0}</p>
-      </div>
-      {cart.length > 0 ? 
-       <Link to="checkout" onClick={() => { dispatch(showCart())}}>
-        <button  className=' mt-6 shadow-none btn-orange w-full   text-center  '>
-          Checkout
-        </button>
-      </Link> :  <button className=' mt-6 shadow-none btn-orange-disabled  w-full   text-center py-4 '>
-          Checkout
-      </button> }
-     
-     
-    </section>
+        {cart.length > 0 ?
+          <Link to="checkout" onClick={() => { dispatch(showCart()) }}>
+            <button className=' mt-6 shadow-none btn-orange w-full   text-center  '>
+              Checkout
+            </button>
+          </Link> : <button className=' mt-6 shadow-none btn-orange-disabled  w-full   text-center py-4 '>
+            Checkout
+          </button>}
+      </section>
     </div>}
     </>
 

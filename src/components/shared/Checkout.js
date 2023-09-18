@@ -55,21 +55,16 @@ const Checkout = () => {
     const handleOrder = (e) => {
         e.preventDefault();
         window.scrollTo({ top: 0, left: 0 })
-         dispatch(removeAll())
-         dispatch(showSummary())
+        dispatch(removeAll())
+        dispatch(showSummary())
         setIsOrdered(true) 
     }
 
-    useEffect(() => {
-        summary
-          ? (document.body.style.overflow="hidden")
-          : (document.body.style.overflow="scroll");
-      }, [summary]);
 
     return (
         <section className='section-wapper'>
             <Link onClick={() => { navigate(-1) }} className='btn-back'>Go Back</Link>
-                <form className='mt-4' onSubmit={handleOrder}>
+                <form className='mt-4 form-container' onSubmit={handleOrder}>
                     <div className="form-input-wapper">
                     <h1 className='form-group-main-header'>Checkout</h1>
                     <h2 className='form-group-secondary-header'>Billing Details</h2>

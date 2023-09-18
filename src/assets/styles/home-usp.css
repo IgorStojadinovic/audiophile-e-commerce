@@ -8,6 +8,7 @@
     md:px-10
     xl:px-40
     xl:gap-14
+    2xl:px-80
   }
 
 .zx9-container{
@@ -58,7 +59,7 @@
     md:mb-10
     xl:text-left
     xl:px-0
-    xl:pr-40
+    xl:pr-16
 }
 
 .oval-group-container {
@@ -72,6 +73,7 @@
     top-[-120px]
     md:h-[944px]
     md:top-[-35%]
+    xl:top-0
     xl:left-[-150px]
 }
 
@@ -124,6 +126,7 @@
     items-start
     text-center
     bg-zx7-mobile
+    bg-cover
     px-6
     py-[100px]
     rounded-lg
@@ -150,8 +153,11 @@
     @apply
     py-10
     px-6
+    h-full
     bg-light-gray
     mt-6
     md:mt-0
-    xl:h-[320px]
+    xl:py-24
+    xl:px-24
+
 }

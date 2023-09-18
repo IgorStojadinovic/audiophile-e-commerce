@@ -4,7 +4,9 @@
     w-full
     z-40
     mx-0
+    md:px-10
     xl:px-40
+    2xl:px-80
 }
 
 .navbar {
@@ -14,6 +16,7 @@
     bg-black
     md:px-10
     xl:px-40
+    2xl:px-80
 }
 
 
@@ -83,4 +86,8 @@
     font-semibold 
     text-[28px] 
     tracking-[2px]
+}
+.nav-link{
+    @apply
+    hover:text-orange-main
 }

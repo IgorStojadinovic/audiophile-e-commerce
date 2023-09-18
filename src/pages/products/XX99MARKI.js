@@ -46,7 +46,7 @@ const XX99MARKI = () => {
   }, []);
   return (
     <>
-      <section className="px-6 pt-6 mb-[120px] md:px-10">
+      <section className="px-6 pt-6 mb-[120px] md:px-10 xl:px-40 2xl:px-80">
         <Link
           onClick={() => {
             navigate(-1);
@@ -101,7 +101,7 @@ const XX99MARKI = () => {
           </figcaption>
         </figure>
       </section>
-      <section className="px-6 mb-[120px] md:mx-10">
+      <section className="px-6 mb-[120px] md:mx-10 xl:px-40 2xl:px-80">
         <h2 className="text-2xl uppercase font-semibold mb-6">Features</h2>
         <p className="mb-4 text-black/50">
           As the headphones all others are measured against, the XX99 Mark I
@@ -120,7 +120,7 @@ const XX99MARKI = () => {
         </p>
       </section>
 
-      <section className="px-6 mb-[120px] md:px-10 md:flex md:justify-between md:w-[70%]">
+      <section className="px-6 mb-[120px] md:px-10 md:flex md:justify-between md:w-[70%] xl:px-40 2xl:px-80">
         <h2 className="text-2xl uppercase font-semibold mb-6">In the box</h2>
         <div>
           <div className="flex mb-2">
@@ -158,7 +158,7 @@ const XX99MARKI = () => {
           alt="promo"
         />
       </section>
-      <section className="px-6 mb-[120px] md:px-10">
+      <section className="px-6 mb-[120px] md:px-10 xl:px-40 2xl:px-80">
         <h2 className="yml-title">You may also like</h2>
         <div className="yml-grid">
           <figure className="yml-container">

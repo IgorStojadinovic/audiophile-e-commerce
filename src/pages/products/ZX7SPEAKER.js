@@ -46,7 +46,7 @@ const ZX7SPEAKER = () => {
   }, []);
   return (
     <>
-      <section className="px-6 pt-6 mb-[120px]">
+      <section className="px-6 pt-6 mb-[120px] xl:px-40 2xl:px-80">
         <Link
           onClick={() => {
             navigate(-1);
@@ -102,7 +102,7 @@ const ZX7SPEAKER = () => {
           </figcaption>
         </figure>
       </section>
-      <section className="px-6 mb-[120px]">
+      <section className="px-6 mb-[120px] xl:px-40 2xl:px-80">
         <h2 className="text-2xl uppercase font-semibold mb-6">Features</h2>
         <p className="mb-4 text-black/50">
           Reap the advantages of a flat diaphragm tweeter cone. This provides a
@@ -122,7 +122,7 @@ const ZX7SPEAKER = () => {
         </p>
       </section>
 
-      <section className="px-6 mb-[120px] md:flex md:justify-between md:w-[70%]">
+      <section className="px-6 mb-[120px] md:flex md:justify-between md:w-[70%] xl:px-40 2xl:px-80">
         <h2 className="text-2xl uppercase font-semibold mb-6">In the box</h2>
         <div>
           <div className="flex mb-2">
@@ -164,7 +164,7 @@ const ZX7SPEAKER = () => {
           alt="promo"
         />
       </section>
-      <section className="px-6 mb-[120px]">
+      <section className="px-6 mb-[120px] xl:px-40 2xl:px-80">
         <h2 className="yml-title">You may also like</h2>
         <div className="yml-grid">
           <figure className="yml-container">

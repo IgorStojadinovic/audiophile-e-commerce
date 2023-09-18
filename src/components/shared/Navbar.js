@@ -8,6 +8,7 @@ import Cart from "../../assets/images/navbar/cart.svg";
 import { FiChevronRight } from 'react-icons/fi';
 
 const Navbar = () => {
+  
   const location = useLocation();
   const currentPath = location.pathname;
   const dispatch = useDispatch()
@@ -17,12 +18,8 @@ const Navbar = () => {
   const cartStatus = useSelector(getCartStatus);
   const cart = useSelector(getCart);
 
-
   const isActiveHome = currentPath === '/';
-  const isActiveHeadpnones = currentPath === '/headphones';
-  const isActiveSpeakers = currentPath === '/speakers';
-  const isActiveEarphones = currentPath === '/graphic-design';
-
+  
   return (
     <>
       {isActiveHome ?
@@ -34,7 +31,7 @@ const Navbar = () => {
             <li onClick={() => (dispatch(showCart()))} className='z-40 hover:cursor-pointer'>
               <img src={Cart} alt="cart-icon"/>
             </li>
-            {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-7 '>
+            {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-7'>
               <span className="relative flex h-3 w-3 z-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
@@ -44,14 +41,14 @@ const Navbar = () => {
               <div className='nav-list-desktop-absolute'>
                 <li className='nav-list-item'><Link to="/"><img src={Logo} alt="logo" /></Link></li>
                 <ul className='uppercase font-semibold text-white w-[50%] flex justify-between'>
-                  <li><Link to="/">Home</Link></li>
-                  <li><Link to="/headphones">Headphones</Link></li>
-                  <li><Link to="/speakers">Speakers</Link></li>
-                  <li><Link to="/earphones">Earphones</Link></li>
+                  <li className='nav-link'><Link to="/">Home</Link></li>
+                  <li className='nav-link'><Link to="/headphones">Headphones</Link></li>
+                  <li className='nav-link'><Link to="/speakers">Speakers</Link></li>
+                  <li className='nav-link'><Link to="/earphones">Earphones</Link></li>
                 </ul>
                 <div onClick={() => (dispatch(showCart()))} className='z-40 hover:cursor-pointer'>
                   <img src={Cart} alt="cart-icon" />
-                  {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-11 xl:right-[180px] '>
+                  {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-11 xl:right-[180px] 2xl:right-[340px] '>
                     <span className="relative flex h-3 w-3 z-0">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
                       <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>
@@ -80,14 +77,14 @@ const Navbar = () => {
 
             <li className='nav-list-item'> <Link to="/"><img src={Logo} alt="logo" /></Link></li>
             <ul className='uppercase font-semibold text-white w-[50%] flex justify-between'>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/headphones">Headphones</Link></li>
-              <li><Link to="/speakers">Speakers</Link></li>
-              <li><Link to="/earphones">Earphones</Link></li>
+              <li className='nav-link'><Link to="/">Home</Link></li>
+              <li className='nav-link'><Link to="/headphones">Headphones</Link></li>
+              <li className='nav-link'><Link to="/speakers">Speakers</Link></li>
+              <li className='nav-link'><Link to="/earphones">Earphones</Link></li>
             </ul>
             <div onClick={() => (dispatch(showCart()))} className='z-40 hover:cursor-pointer'>
               <img src={Cart} alt="cart-icon" />
-              {(cartStatus && cart.length > 0) && <div className='absolute right-5 top-6 md:right-9 '>
+              {(cartStatus && cart.length > 0) && <div className='absolute right-9 top-11 xl:right-[180px] 2xl:right-[340px] '>
                 <span className="relative flex h-3 w-3 z-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-main ">  </span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-main"></span>

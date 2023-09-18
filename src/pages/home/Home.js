@@ -14,13 +14,7 @@ const Home = () => {
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0 });
   };
-  /*
-  useEffect(() => {
-    summary
-      ? (document.body.style.overflow="hidden")
-      : (document.body.style.overflow="scroll");
-  }, [summary]);
-  */
+
   return (
     <>
       <section className="hero-container relative">
@@ -44,16 +38,9 @@ const Home = () => {
         <div className="product-wapper">
           <div className="product-container">
             <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcSet={require("../../assets/images/products-section/products-section-headphone-desktop.png")}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-headphone-tablet.png")}
-              />
-              <img className="xl:h-[140px]"
-                src={require("../../assets/images/products-section/product-section-headphone-mobile.png")}
+            <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/product-section-headphone-mobile.png")} />
+              <img className='2xl:h-[150px] xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/products-section-headphone-desktop.png")}
                 alt="footer-promo"
               />
             </picture>
@@ -76,16 +63,9 @@ const Home = () => {
         <div className="product-wapper">
           <div className="product-container">
             <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcSet={require("../../assets/images/products-section/product-section-speaker-desktop.png")}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-speaker-trablet.png")}
-              />
-              <img
-                src={require("../../assets/images/products-section/prodcut-section-speaker-mobile.png")}
+            <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/prodcut-section-speaker-mobile.png")} />
+              <img className='2xl:h-[150px] xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/product-section-speaker-desktop.png")}
                 alt="footer-promo"
               />
             </picture>
@@ -109,16 +89,10 @@ const Home = () => {
         <div className="product-wapper">
           <div className="product-container">
             <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcSet={require("../../assets/images/products-section/products-section-earphoens-desktop.png")}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-earphones-tablet.png")}
-              />
-              <img
-                src={require("../../assets/images/products-section/products-section-earphones-mobile.png")}
+            <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/products-section-earphones-mobile.png")} />
+              
+              <img className='2xl:h-[150px] xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/products-section-earphoens-desktop.png")}
                 alt="footer-promo"
               />
             </picture>
@@ -139,7 +113,6 @@ const Home = () => {
           <div className="product-block-element"></div>
         </div>
       </section>
-
       <section className="product-usp">
         <div className="zx9-container">
           <picture className="z-40 ">
@@ -186,12 +159,9 @@ const Home = () => {
                 media="(min-width: 1280px)"
                 srcSet={require("../../assets/images/yx1-desktop.png")}
               />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-earphones-tablet.png")}
-              />
+             
               <img
-              className=" rounded-lg"
+              className=" rounded-lg w-full"
                 src={require("../../assets/images/yx1-mobile.png")}
                 alt="promo"
               />

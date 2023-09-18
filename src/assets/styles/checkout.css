@@ -4,14 +4,23 @@
   py-6 
   bg-light-gray
   md:pb-36
+  xl:px-40
+  2xl:px-80
+}
+
+.form-container {
+  @apply
+  w-[100%]
+  2xl:flex
+  2xl:justify-between
 }
 .form-input{
-    @apply
-    focus:outline-none
+  @apply
+  focus:outline-none
   focus:border-orange-main 
-    focus:ring-1 
+  focus:ring-1 
   focus:ring-orange-main
-    border border-black/30 rounded-md py-3 px-6 text-black/50
+  border border-black/30 rounded-md py-3 px-6 text-black/50
 }
 
 .form-input-wapper {
@@ -22,6 +31,7 @@
   px-8 
   py-8 
   rounded-lg
+  2xl:w-[50%]
 }
 
 .form-group-main-header {
@@ -55,6 +65,9 @@
   bg-white  
   rounded-lg 
   flex flex-col 
+  2xl:w-[45%]
+  2xl:mt-0
+  2xl:h-[50%]  
 }
 
 .form-summary-header {
@@ -120,6 +133,9 @@
   md:mt-[20%]
   md:mx-auto
   md:w-[50%]
+  xl:w-[40%]
+  2xl:w-[30%]
+  
 }
 
 .form-summary-success-icon {
