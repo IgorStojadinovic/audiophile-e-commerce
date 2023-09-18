@@ -11,7 +11,7 @@ What's currently done:
 - Cart functionality
 - Checkout functionality
 
-  There is still, is still a lot of stuff to clean up
+  There is still,a lot of stuff to clean up
 
 
 
