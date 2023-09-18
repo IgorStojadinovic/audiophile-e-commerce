@@ -97,7 +97,7 @@ const Navbar = () => {
       }
 
 
-      {isActiveHome ? <div className={showMenu ? " z-[50] absolute transition ease-in-out delay-150  translate-x-0  w-full top-[100px] md:top-[90px] bg-black/50 h-[2000px]" : "z-[50] absolute transition ease-in-out delay-150  translate-x-[-3000px] w-full top-[100px] md:top-[90px] h-[2000px]"}>
+      {isActiveHome ? <div className={showMenu ? " navbar-mobile-active" : "navbar-mobile-closed"}>
 
         <section className='products-sections bg-white pt-10 md:mt-0'>
           <Link to="headphones" onClick={() => { setShowMenu(!showMenu) }}>
@@ -132,7 +132,7 @@ const Navbar = () => {
           </Link>
         </section>
       </div>
-        : <div className={showMenu ? " z-[50] absolute transition ease-in-out delay-150  translate-x-0  w-full top-[100px] md:top-[200px] bg-black/50 h-[2000px]" : "z-[50] absolute transition ease-in-out delay-150  translate-x-[-3000px] w-full top-[100px] md:top-[200px]  h-[2000px]"}>
+        : <div className={showMenu ? "navbar-tablet-active" : "navbar-tablet-closed"}>
 
           <section className='products-sections bg-white pt-10 md:mt-0'>
             <Link to="headphones" onClick={() => { setShowMenu(!showMenu) }}>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import {AiOutlineCheck} from 'react-icons/ai'
@@ -11,7 +11,6 @@ import {
     getXX59Quantity,
     getXX99MKIIQuantity,
     getXX99MKIQuantity,
-    getSummary,
     showSummary
 
 } from '../../store/cartSlice';
@@ -27,7 +26,7 @@ const Checkout = () => {
     let xx59Quantity = useSelector(getXX59Quantity)
     let xx99mkIIQuantity = useSelector(getXX99MKIIQuantity);
     let xx99mkIQuantity = useSelector(getXX99MKIQuantity);
-    let summary = useSelector(getSummary);
+
 
     const [isOrderd,setIsOrdered] = useState(false);
 

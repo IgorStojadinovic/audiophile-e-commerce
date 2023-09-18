@@ -127,7 +127,7 @@ const cartSlice = createSlice({
                   );
                  
                   if (existingItemIndex !== -1) {
-                     //Earphones YX-1 
+                
                      if(state.cart[existingItemIndex].name === 'yx1'){
                           // Item already exists, create a new array with the updated item
                           const updatedCart = [...state.cart];
@@ -157,7 +157,7 @@ const cartSlice = createSlice({
                       );
                      
                       if (existingItemIndex !== -1) {
-                         //Earphones YX-1 
+                        
                          if(state.cart[existingItemIndex].name === 'yx1'){
                               // Item already exists, create a new array with the updated item
                               const updatedCart = [...state.cart];
@@ -186,7 +186,7 @@ const cartSlice = createSlice({
                   );
                  
                   if (existingItemIndex !== -1) {
-                     //Earphones YX-1 
+                  
                      if(state.cart[existingItemIndex].name === 'xx99mkI'){
                           // Item already exists, create a new array with the updated item
                           const updatedCart = [...state.cart];
@@ -217,7 +217,7 @@ const cartSlice = createSlice({
                       );
                      
                       if (existingItemIndex !== -1) {
-                         //Earphones YX-1 
+                        
                          if(state.cart[existingItemIndex].name === 'xx99mkI'){
                               // Item already exists, create a new array with the updated item
                               const updatedCart = [...state.cart];
@@ -245,7 +245,7 @@ const cartSlice = createSlice({
                   );
                  
                   if (existingItemIndex !== -1) {
-                     //Earphones YX-1 
+                   
                      if(state.cart[existingItemIndex].name === 'xx99mkII'){
                           // Item already exists, create a new array with the updated item
                           const updatedCart = [...state.cart];
@@ -276,7 +276,7 @@ const cartSlice = createSlice({
                       );
                      
                       if (existingItemIndex !== -1) {
-                         //Earphones YX-1 
+                        
                          if(state.cart[existingItemIndex].name === 'xx99mkII'){
                               // Item already exists, create a new array with the updated item
                               const updatedCart = [...state.cart];
@@ -305,7 +305,6 @@ const cartSlice = createSlice({
                   );
                  
                   if (existingItemIndex !== -1) {
-                     //Earphones YX-1 
                      if(state.cart[existingItemIndex].name === 'xx59'){
                           // Item already exists, create a new array with the updated item
                           const updatedCart = [...state.cart];
@@ -337,7 +336,7 @@ const cartSlice = createSlice({
                       );
                      
                       if (existingItemIndex !== -1) {
-                         //Earphones YX-1 
+                     
                          if(state.cart[existingItemIndex].name === 'xx59'){
                               // Item already exists, create a new array with the updated item
                               const updatedCart = [...state.cart];
@@ -365,7 +364,7 @@ const cartSlice = createSlice({
                   );
                  
                   if (existingItemIndex !== -1) {
-                     //Earphones YX-1 
+                   
                      if(state.cart[existingItemIndex].name === 'zx9'){
                           // Item already exists, create a new array with the updated item
                           const updatedCart = [...state.cart];
@@ -397,7 +396,7 @@ const cartSlice = createSlice({
                       );
                      
                       if (existingItemIndex !== -1) {
-                         //Earphones YX-1 
+                      
                          if(state.cart[existingItemIndex].name === 'zx9'){
                               // Item already exists, create a new array with the updated item
                               const updatedCart = [...state.cart];
@@ -425,7 +424,7 @@ const cartSlice = createSlice({
                   );
                  
                   if (existingItemIndex !== -1) {
-                     //Earphones YX-1 
+                    
                      if(state.cart[existingItemIndex].name === 'zx7'){
                           // Item already exists, create a new array with the updated item
                           const updatedCart = [...state.cart];
@@ -456,7 +455,7 @@ const cartSlice = createSlice({
                       );
                      
                       if (existingItemIndex !== -1) {
-                         //Earphones YX-1 
+                         
                          if(state.cart[existingItemIndex].name === 'zx7'){
                               // Item already exists, create a new array with the updated item
                               const updatedCart = [...state.cart];

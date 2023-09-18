@@ -9,27 +9,26 @@ const Speakers = () => {
     <>
       <h1 className='page-header'>Speakers</h1>
       <section className='px-6 mb-[120px] md:px-10  xl:px-40 2xl:px-80'>
-
-        <figure className='headphone-figure'>
-          <picture className='headphone-picture'>
+        <figure className='speakers-figure'>
+          <picture className='speakers-picture'>
             <img src={require('../../assets/images/speakers-page/zx-9-mobile.png')} />
           </picture>
-          <figcaption className='headphone-fig-caption'>
-            <p className='headphone-subheading'>new product</p>
-            <h1 className='headphone-heading  md:font-bold'>ZX9 speaker</h1>
-            <p className='headphone-text'>Upgrade your sound system with the all new ZX9 active speaker. It's a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.</p>
+          <figcaption className='speakers-fig-caption'>
+            <p className='speakers-subheading'>new product</p>
+            <h1 className='speakers-heading  md:font-bold'>ZX9 speaker</h1>
+            <p className='speakers-text'>Upgrade your sound system with the all new ZX9 active speaker. It's a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.</p>
             <Link to='speaker-zx9'>
               <button className='btn-orange'>See product</button>
             </Link>
           </figcaption>
         </figure>
-        <figure className='headphone-figure'>
-          <picture className='headphone-picture'>
+        <figure className='speakers-figure'>
+          <picture className='speakers-picture'>
             <img src={require('../../assets/images/speakers-page/zx-7-mobiole.png')} />
           </picture>
-          <figcaption className='headphone-fig-caption'>
-            <h1 className='headphone-heading  md:font-bold'>ZX7 SPEAKER</h1>
-            <p className='headphone-text'>Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.</p>
+          <figcaption className='speakers-fig-caption'>
+            <h1 className='speakers-heading  md:font-bold'>ZX7 SPEAKER</h1>
+            <p className='speakers-text'>Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.</p>
             <Link to="speaker-zx7">
               <button className='btn-orange'>See product</button>
             </Link>

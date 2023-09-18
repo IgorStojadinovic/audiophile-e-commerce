@@ -91,3 +91,61 @@
     @apply
     hover:text-orange-main
 }
+
+.navbar-mobile-active {
+    @apply
+    z-[50] 
+    absolute 
+    transition 
+    ease-in-out 
+    delay-150  
+    translate-x-0  
+    w-full 
+    bg-black/50 
+    h-[2000px]
+    top-[50px] 
+    md:top-[90px] 
+}
+
+.navbar-mobile-closed {
+    @apply 
+    z-[50] 
+    absolute 
+    transition 
+    ease-in-out 
+    delay-150  
+    translate-x-[-3000px] 
+    w-full 
+    top-[50px] 
+    md:top-[90px] 
+    h-[2000px]
+}
+
+.navbar-tablet-active {
+    @apply
+    z-[50] 
+    absolute 
+    transition 
+    ease-in-out 
+    delay-150  
+    translate-x-0  
+    w-full 
+    h-[2000px]
+    bg-black/50 
+    top-[100px] 
+    md:top-[200px] 
+   
+}
+
+.navbar-tablet-closed {
+    @apply
+    z-[50] 
+    absolute 
+    transition 
+    ease-in-out delay-150  
+    translate-x-[-3000px] 
+    w-full 
+    h-[2000px]
+    top-[100px] 
+    md:top-[200px]  
+}

@@ -1,10 +1,13 @@
 import React from 'react'
 import {FiChevronRight} from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+
 const Headphones = () => {
+
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0 })
   }
+
   return (
     <>
     <h1 className='page-header'>Headphones</h1>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link,useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { AiOutlineClose } from 'react-icons/ai';
 import {
   getCart,
@@ -22,9 +22,6 @@ const Cart = () => {
 
   const dispatch = useDispatch();
 
-  const location = useLocation();
-  const currentPath = location.pathname;
-
   let cart = useSelector(getCart);
   let displayCart = useSelector(getShowCart);
   let yxQuantity = useSelector(getEarphoneQuantity)
@@ -41,7 +38,7 @@ const Cart = () => {
   const [showXXMARKII, setShowXXMARKII] = useState(false);
   const [showXXMARKI, setShowXXMARKI] = useState(false);
 
-  const isActiveHome = currentPath !== '/' || currentPath !== '/headphones' || currentPath !== '/speakers' || currentPath !== "/earphones";
+  
   useEffect(() => {
     if (cart.length) {
       cart.map((item) => {
@@ -71,13 +68,10 @@ const Cart = () => {
     }
   }, [cart, yxQuantity])
 
- 
-
-
   return (
-    <>{displayCart && <div className='bg-black/70 z-30 absolute h-full w-full top-0'>
-      <section className= 'z-40 mt-8 px-8 py-8 bg-light-gray mx-6 rounded-lg flex flex-col md:w-[50%] md:mt-32 md:ml-auto xl:mt-32 xl:mr-40 xl:w-[20%] 2xl:mr-80' >
-        <div onClick={() => { dispatch(showCart()); }} className='w-full flex justify-end  items-center mb-5 hover:cursor-pointer'>
+    <>{displayCart && <div className='cart-bark-overlay'>
+      <section className= 'cart-container' >
+        <div onClick={() => { dispatch(showCart()); }} className='cart-close-btn'>
           <AiOutlineClose size={15} />
         </div>
         <div className='flex justify-between items-center mb-8'>
@@ -232,7 +226,7 @@ const Cart = () => {
             <button className=' mt-6 shadow-none btn-orange w-full   text-center  '>
               Checkout
             </button>
-          </Link> : <button className=' mt-6 shadow-none btn-orange-disabled  w-full   text-center py-4 '>
+          </Link> : <button className='btn-orange-disabled mt-6 w-full text-center py-4 '>
             Checkout
           </button>}
       </section>

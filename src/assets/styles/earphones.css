@@ -1,0 +1,70 @@
+.earphones-figure {
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    text-center
+    mt-16
+    md:mb-32
+    xl:flex-row
+
+}
+.earphones-fig-caption{
+    @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+    md:mx-24
+    xl:w-[45%]
+    xl:items-start
+    xl:text-left
+    
+
+}
+
+.earphones-picture {
+    @apply
+    flex
+    justify-center
+    items-center
+    bg-light-gray
+    w-full
+    rounded-lg
+    mb-8
+    pt-10
+    pb-[68px]
+    px-[54px]
+    xl:px-0
+    xl:py-0
+    xl:mb-0
+    xl:w-[65%]
+    xl:h-[560px]
+}
+
+.earphones-subheading {
+    @apply
+    text-orange-main
+    text-[14px]
+    uppercase
+    tracking-[10px]
+    mb-6
+}
+
+.earphones-heading {
+    @apply
+    uppercase
+    text-[28px]
+    mb-6
+    md:text-4xl
+    md:w-[40%]
+    xl:w-[70%]
+  
+}
+
+.earphones-text {
+    @apply
+    text-black/50
+    mb-6
+}

@@ -4,12 +4,8 @@ import Navbar from './shared/Navbar';
 import Footer from './shared/Footer';
 import Cart from './shared/Cart';
 
-
-
-
 export const Layout = () => {
   
-
   return (
     <>
       <Navbar />

@@ -1,4 +1,4 @@
-.headphone-figure-product {
+.indivitual-figure-product {
     @apply
     flex
     flex-col
@@ -8,7 +8,8 @@
     md:justify-between
     md:items-center
 }
-.headphone-fig-caption-product{
+
+.indivitual-fig-caption-product{
     @apply
     flex
     flex-col
@@ -16,11 +17,9 @@
     items-center
     md:w-[50%]
     md:items-start
-
-   
 }
 
-.headphone-picture-product {
+.indivitual-picture-product {
     @apply
     flex
     justify-center
@@ -35,7 +34,7 @@
     
 }
 
-.headphone-subheading-product {
+.indivitual-subheading-product {
     @apply
     text-orange-main
     text-[14px]
@@ -44,7 +43,7 @@
     mb-6
 }
 
-.headphone-heading {
+.indivitual-heading {
     @apply
     uppercase
     text-[28px]
@@ -52,7 +51,7 @@
     mb-6
 }
 
-.headphone-text {
+.indivitual-text {
     @apply
     text-black/50
     mb-6

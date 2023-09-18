@@ -1,16 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FiChevronRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { getSummary } from "../../store/cartSlice";
-
-import zx9Mobile from "../../assets/images/zx9-mobile.png";
-import zx9Tablet from "../../assets/images/zx9-tablet.png";
-import zx9Desktop from "../../assets/images/zx9-desktop.png";
-import heroDesktop from "../../assets/images/hero-desktop.jpg";
 
 const Home = () => {
-  const summary = useSelector(getSummary);
+
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0 });
   };
@@ -116,13 +109,10 @@ const Home = () => {
       <section className="product-usp">
         <div className="zx9-container">
           <picture className="z-40 ">
-            {/* Desktop image */}
-            <source media="(min-width: 1280px)" srcSet={zx9Desktop} />
-            {/* Tablet image */}
-            <source media="(min-width: 768px)" srcSet={zx9Tablet} />
-            {/* Mobile image */}
+            <source media="(min-width: 1280px)" srcSet={require("../../assets/images/zx9-desktop.png")} />
+            <source media="(min-width: 768px)" srcSet={require("../../assets/images/zx9-tablet.png") } />
             <img
-              src={zx9Mobile}
+              src={require("../../assets/images/zx9-mobile.png")}
               alt="footer-promo"
               className="rounded-lg w-full xl:absolute xl:h-[493px] xl:w-[493px] bottom-0"
             />

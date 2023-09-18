@@ -5,14 +5,9 @@ import { addItem, updateQuantity } from "../../store/cartSlice";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
-import xx99MIIM from "../../assets/images/sugestions/xx-99-2-mobile.png";
-import xx99MIIT from "../../assets/images/sugestions/xx-99-2-tablet.png";
-import zx9SugM from "../../assets/images/sugestions/zx9-mobile.png";
-import zx9SugT from "../../assets/images/sugestions/zx9-tablet.png";
-import xx59M from "../../assets/images/sugestions/xx559-mobile.png";
-import xx59T from "../../assets/images/sugestions/xx59-tablet.png";
 
 const XX99MARKI = () => {
+  
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const quantity = useSelector(getXX99MKIQuantity);
@@ -38,12 +33,15 @@ const XX99MARKI = () => {
       dispatch(addItem(item));
     }
   };
+  
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0 });
   };
+
   useEffect(() => {
     scrollTop();
   }, []);
+
   return (
     <>
       <section className="px-6 pt-6 mb-[120px] md:px-10 xl:px-40 2xl:px-80">
@@ -55,16 +53,16 @@ const XX99MARKI = () => {
         >
           Go Back
         </Link>
-        <figure className="headphone-figure-product ">
-          <picture className="headphone-picture-product">
+        <figure className="indivitual-figure-product ">
+          <picture className="indivitual-picture-product">
             <img
               src={require("../../assets/images/products/xx99-mark-1-mobile.png")}
               alt="xx99-mark-2-headpnones"
             />
           </picture>
-          <figcaption className="headphone-fig-caption-product ">
-            <h1 className="headphone-heading">xx99 mark I headphones</h1>
-            <p className="headphone-text">
+          <figcaption className="indivitual-fig-caption-product ">
+            <h1 className="indivitual-heading">xx99 mark I headphones</h1>
+            <p className="indivitual-text">
               As the gold standard for headphones, the classic XX99 Mark I
               offers detailed and accurate audio reproduction for audiophiles,
               mixing engineers, and music aficionados alike in studios and on
@@ -163,16 +161,8 @@ const XX99MARKI = () => {
         <div className="yml-grid">
           <figure className="yml-container">
             <picture className="yml-picture">
-              {/* Desktop image 
-                        <source
-                          media="(min-width: 1280px)"
-                          srcSet={zx9Desktop}
-                        />
-                        */}
-              {/* Tablet image */}
-              <source media="(min-width: 768px)" srcSet={xx99MIIT} />
-              {/* Mobile image */}
-              <img src={xx99MIIM} alt="footer-promo" />
+              <source media="(min-width: 768px)" srcSet={require("../../assets/images/sugestions/xx-99-2-tablet.png")} />
+              <img src={require("../../assets/images/sugestions/xx-99-2-mobile.png")} alt="" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">
               XX99 Mark II
@@ -183,16 +173,8 @@ const XX99MARKI = () => {
           </figure>
           <figure className="yml-container">
             <picture className="yml-picture">
-              {/* Desktop image 
-                        <source
-                          media="(min-width: 1280px)"
-                          srcSet={zx9Desktop}
-                        />
-                        */}
-              {/* Tablet image */}
-              <source media="(min-width: 768px)" srcSet={xx59T} />
-              {/* Mobile image */}
-              <img src={xx59M} alt="footer-promo" />
+              <source media="(min-width: 768px)" srcSet={require("../../assets/images/sugestions/xx59-tablet.png")} />
+              <img src={require("../../assets/images/sugestions/xx559-mobile.png")} alt="footer-promo" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">XX59</h3>
             <Link to="/headphones/headphone-xx59">
@@ -201,16 +183,8 @@ const XX99MARKI = () => {
           </figure>
           <figure className="yml-container">
             <picture className="yml-picture">
-              {/* Desktop image 
-                        <source
-                          media="(min-width: 1280px)"
-                          srcSet={zx9Desktop}
-                        />
-                        */}
-              {/* Tablet image */}
-              <source media="(min-width: 768px)" srcSet={zx9SugT} />
-              {/* Mobile image */}
-              <img src={zx9SugM} alt="footer-promo" />
+              <source media="(min-width: 768px)" srcSet={require("../../assets/images/sugestions/zx9-tablet.png")} />
+              <img src={require("../../assets/images/sugestions/zx9-mobile.png")} alt="footer-promo" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">
               ZX9 Speaker

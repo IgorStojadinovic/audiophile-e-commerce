@@ -5,14 +5,9 @@ import { addItem, updateQuantity } from "../../store/cartSlice";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
-import zx9SugM from "../../assets/images/sugestions/zx9-mobile.png";
-import zx9SugT from "../../assets/images/sugestions/zx9-tablet.png";
-import xx59M from "../../assets/images/sugestions/xx559-mobile.png";
-import xx59T from "../../assets/images/sugestions/xx59-tablet.png";
-import xx99M from "../../assets/images/sugestions/xx99-mobile.png";
-import xx99T from "../../assets/images/sugestions/xx99-tablet.png";
 
 const ZX7SPEAKER = () => {
+ 
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const quantity = useSelector(getZX7Quantity);
@@ -38,12 +33,15 @@ const ZX7SPEAKER = () => {
       dispatch(addItem(item));
     }
   };
+
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0 });
   };
+
   useEffect(() => {
     scrollTop();
   }, []);
+  
   return (
     <>
       <section className="px-6 pt-6 mb-[120px] xl:px-40 2xl:px-80">
@@ -55,16 +53,16 @@ const ZX7SPEAKER = () => {
         >
           Go Back
         </Link>
-        <figure className="headphone-figure-product ">
-          <picture className="headphone-picture-product">
+        <figure className="indivitual-figure-product ">
+          <picture className="indivitual-picture-product">
             <img
               src={require("../../assets/images/products/zx7-mobile.png")}
               alt="xx99-mark-2-headpnones"
             />
           </picture>
-          <figcaption className="headphone-fig-caption-product ">
-            <h1 className="headphone-heading w-1/4">ZX7 Speaker</h1>
-            <p className="headphone-text">
+          <figcaption className="indivitual-fig-caption-product ">
+            <h1 className="indivitual-heading w-1/4">ZX7 Speaker</h1>
+            <p className="indivitual-text">
               Stream high quality sound wirelessly with minimal to no loss. The
               ZX7 speaker uses high-end audiophile components that represents
               the top of the line powered speakers for home or studio use.
@@ -164,21 +162,13 @@ const ZX7SPEAKER = () => {
           alt="promo"
         />
       </section>
-      <section className="px-6 mb-[120px] xl:px-40 2xl:px-80">
+      <section className="px-6 mb-[120px] xl:px-40 2xl-80">
         <h2 className="yml-title">You may also like</h2>
         <div className="yml-grid">
           <figure className="yml-container">
             <picture className="yml-picture">
-              {/* Desktop image 
-                        <source
-                          media="(min-width: 1280px)"
-                          srcSet={zx9Desktop}
-                        />
-                        */}
-              {/* Tablet image */}
-              <source media="(min-width: 768px)" srcSet={xx99T} />
-              {/* Mobile image */}
-              <img src={xx99M} alt="footer-promo" />
+              <source media="(min-width: 768px)" srcSet={require("../../assets/images/sugestions/xx99-tablet.png")} />
+              <img src={require("../../assets/images/sugestions/xx99-mobile.png")} alt="" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">
               XX99 Mark I
@@ -189,16 +179,8 @@ const ZX7SPEAKER = () => {
           </figure>
           <figure className="yml-container">
             <picture className="yml-picture">
-              {/* Desktop image 
-                        <source
-                          media="(min-width: 1280px)"
-                          srcSet={zx9Desktop}
-                        />
-                        */}
-              {/* Tablet image */}
-              <source media="(min-width: 768px)" srcSet={xx59T} />
-              {/* Mobile image */}
-              <img src={xx59M} alt="footer-promo" />
+              <source media="(min-width: 768px)" srcSet={require("../../assets/images/sugestions/xx59-tablet.png")} />
+              <img src={require("../../assets/images/sugestions/xx559-mobile.png")} alt="" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">XX59</h3>
             <Link to="/headphones/headphone-xx59">
@@ -207,16 +189,9 @@ const ZX7SPEAKER = () => {
           </figure>
           <figure className="yml-container">
             <picture className="yml-picture">
-              {/* Desktop image 
-                        <source
-                          media="(min-width: 1280px)"
-                          srcSet={zx9Desktop}
-                        />
-                        */}
+              <source media="(min-width: 768px)" srcSet={require("../../assets/images/sugestions/zx9-tablet.png")} />
 
-              <source media="(min-width: 768px)" srcSet={zx9SugT} />
-
-              <img src={zx9SugM} alt="footer-promo" />
+              <img src={require("../../assets/images/sugestions/zx9-mobile.png")} alt="" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">
               ZX9 Speaker

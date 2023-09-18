@@ -5,12 +5,7 @@ import { addItem, updateQuantity } from "../../store/cartSlice";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
-import zx9SugM from "../../assets/images/sugestions/zx9-mobile.png";
-import zx9SugT from "../../assets/images/sugestions/zx9-tablet.png";
-import xx99MIIM from "../../assets/images/sugestions/xx-99-2-mobile.png";
-import xx99MIIT from "../../assets/images/sugestions/xx-99-2-tablet.png";
-import xx99M from "../../assets/images/sugestions/xx99-mobile.png";
-import xx99T from "../../assets/images/sugestions/xx99-tablet.png";
+
 
 const XX59 = () => {
   
@@ -43,7 +38,10 @@ const XX59 = () => {
     window.scrollTo({ top: 0, left: 0 });
   };
   
-
+  useEffect(() => {
+    scrollTop();
+  }, []);
+  
   return (
     <>
       <section className="px-6 pt-6 mb-[120px] xl:px-40 2xl:px-80">
@@ -55,16 +53,16 @@ const XX59 = () => {
         >
           Go Back
         </Link>
-        <figure className="headphone-figure-product ">
-          <picture className="headphone-picture-product">
+        <figure className="indivitual-figure-product ">
+          <picture className="indivitual-picture-product">
             <img
               src={require("../../assets/images/products/xx59-mobile.png")}
               alt="xx99-mark-2-headpnones"
             />
           </picture>
-          <figcaption className="headphone-fig-caption-product ">
-            <h1 className="headphone-heading w-1/2">XX59 headphones</h1>
-            <p className="headphone-text">
+          <figcaption className="indivitual-fig-caption-product ">
+            <h1 className="indivitual-heading w-1/2">XX59 headphones</h1>
+            <p className="indivitual-text">
               Enjoy your audio almost anywhere and customize it to your specific
               tastes with the XX59 headphones. The stylish yet durable versatile
               wireless headset is a brilliant companion at home or on the move.
@@ -165,8 +163,8 @@ const XX59 = () => {
         <div className="yml-grid">
           <figure className="yml-container">
             <picture className="yml-picture">
-              <source media="(min-width: 768px)" srcSet={xx99T} />
-              <img src={xx99M} alt="footer-promo" />
+              <source media="(min-width: 768px)" srcSet={require("../../assets/images/sugestions/xx99-tablet.png")} />
+              <img src={require("../../assets/images/sugestions/xx99-mobile.png")} alt="footer-promo" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">
               XX99 Mark I
@@ -177,8 +175,8 @@ const XX59 = () => {
           </figure>
           <figure className="yml-container">
             <picture className="yml-picture">
-              <source media="(min-width: 768px)" srcSet={xx99MIIT} />
-              <img src={xx99MIIM} alt="footer-promo" />
+              <source media="(min-width: 768px)" srcSet={require("../../assets/images/sugestions/xx-99-2-tablet.png")} />
+              <img src={require("../../assets/images/sugestions/xx-99-2-mobile.png")} alt="footer-promo" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">
               XX99 Mark II
@@ -189,8 +187,8 @@ const XX59 = () => {
           </figure>
           <figure className="yml-container">
             <picture className="yml-picture">
-              <source media="(min-width: 768px)" srcSet={zx9SugT} />
-              <img src={zx9SugM} alt="footer-promo" />
+              <source media="(min-width: 768px)" srcSet={require("../../assets/images/sugestions/zx9-tablet.png")} />
+              <img src={require("../../assets/images/sugestions/zx9-mobile.png")} alt="footer-promo" />
             </picture>
             <h3 className="uppercase font-semibold text-xl md:my-10">
               ZX9 Speaker
