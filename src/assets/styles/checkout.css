@@ -21,7 +21,7 @@
 }
 
 
-.form-input{
+.form-input {
   
   @apply
     focus:outline-none
