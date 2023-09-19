@@ -199,17 +199,9 @@ const XX99MARKI = () => {
         <div className="product-wapper">
           <div className="product-container">
             <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcSet={require("../../assets/images/products-section/products-section-headphone-desktop.png")}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-headphone-tablet.png")}
-              />
-              <img
-                className="xl:h-[140px]"
-                src={require("../../assets/images/products-section/product-section-headphone-mobile.png")}
+            <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/product-section-headphone-mobile.png")} />
+              <img className=' xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/products-section-headphone-desktop.png")}
                 alt="footer-promo"
               />
             </picture>
@@ -232,16 +224,9 @@ const XX99MARKI = () => {
         <div className="product-wapper">
           <div className="product-container">
             <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcSet={require("../../assets/images/products-section/product-section-speaker-desktop.png")}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-speaker-trablet.png")}
-              />
-              <img
-                src={require("../../assets/images/products-section/prodcut-section-speaker-mobile.png")}
+            <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/prodcut-section-speaker-mobile.png")} />
+              <img className=' xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/product-section-speaker-desktop.png")}
                 alt="footer-promo"
               />
             </picture>
@@ -265,16 +250,10 @@ const XX99MARKI = () => {
         <div className="product-wapper">
           <div className="product-container">
             <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcSet={require("../../assets/images/products-section/products-section-earphoens-desktop.png")}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-earphones-tablet.png")}
-              />
-              <img
-                src={require("../../assets/images/products-section/products-section-earphones-mobile.png")}
+            <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/products-section-earphones-mobile.png")} />
+              
+              <img className=' xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/yx-1-desktop.png")}
                 alt="footer-promo"
               />
             </picture>

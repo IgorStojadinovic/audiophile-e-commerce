@@ -1,99 +1,119 @@
  /*Buttons*/
  .btn-orange {
-    width: 160px;
-    height: 48px;
-    font-size: 13px;
+  
+  width: 160px;
+  height: 48px;
+  font-size: 13px;
+
   @apply 
-  uppercase
-  tracking-widest
-  py-2
-  px-4 
-  bg-orange-main
-  text-white 
-  font-semibold 
-  rounded-lg 
-  shadow-md 
-  rounded-none	
-  hover:bg-orange-light
-  hover:cursor-pointer
+    uppercase
+    tracking-widest
+    py-2
+    px-4 
+    bg-orange-main
+    text-white 
+    font-semibold 
+    rounded-lg 
+    shadow-md 
+    rounded-none	
+    hover:bg-orange-light
+    hover:cursor-pointer
   
 }
 
+
 .btn-orange-disabled {
+  
   width: 160px;
   height: 48px;
   font-size: 13px;
-@apply 
-uppercase
-tracking-widest
-py-2
-px-4 
-bg-orange-light
-text-white 
-font-semibold 
-rounded-lg 
-shadow-md 
-rounded-none
-hover:cursor-pointer
+
+  @apply 
+    uppercase
+    tracking-widest
+    py-2
+    px-4 
+    bg-orange-light
+    text-white 
+    font-semibold 
+    rounded-lg 
+    shadow-md 
+    rounded-none
+    hover:cursor-pointer
+
 }
 
-.btn-dark{
+
+.btn-dark {
+
   width: 160px;
   height: 48px;
   font-size: 13px;
-@apply 
-uppercase
-tracking-widest
-py-2 
-px-4 
-bg-black
-text-white 
-font-semibold 
-rounded-lg 
-shadow-md 
-rounded-none	
-hover:bg-orange-light
-hover:cursor-pointer
+
+  @apply 
+    uppercase
+    tracking-widest
+    py-2 
+    px-4 
+    bg-black
+    text-white 
+    font-semibold 
+    rounded-lg 
+    shadow-md 
+    rounded-none	
+    hover:bg-orange-light
+    hover:cursor-pointer
+
 }
+
 
 .btn-outline {
-    width: 160px;
-    height: 48px;
-    font-size: 13px;
+  
+  width: 160px;
+  height: 48px;
+  font-size: 13px;
+
   @apply 
-  uppercase
-  tracking-widest
-  py-2 
-  px-4 
-  font-bold
-  shadow-md 
-  rounded-none	
-  border-2 border-black
-  hover:bg-black 
-  hover:text-white
+    uppercase
+    tracking-widest
+    py-2 
+    px-4 
+    font-bold
+    shadow-md 
+    rounded-none	
+    border-2 border-black
+    hover:bg-black 
+    hover:text-white
 
 }
+
 
 .btn-link {
-    width: 160px;
-    height: 48px;
-    font-size: 13px;
+
+  width: 160px;
+  height: 48px;
+  font-size: 13px;
+
   @apply 
-  flex
-  items-center
-  justify-center
-  uppercase
-  tracking-widest
-  py-2 
-  px-4 
-  text-black/50
-  font-semibold 
-  rounded-none	
-  hover:text-orange-main
+    flex
+    items-center
+    justify-center
+    uppercase
+    tracking-widest
+    py-2 
+    px-4 
+    text-black/50
+    font-semibold 
+    rounded-none	
+    hover:text-orange-main
+
 }
 
+
 .btn-back {
+
   @apply
-  text-black/50 
-  my-4
+    text-black/50 
+    my-4
+
 }

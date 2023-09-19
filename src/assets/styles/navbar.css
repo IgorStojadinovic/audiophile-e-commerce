@@ -1,151 +1,181 @@
 .navbar-absolute {
+
     @apply
-    absolute
-    w-full
-    z-40
-    mx-0
-    md:px-10
-    xl:px-40
-    2xl:px-80
+        absolute
+        w-full
+        z-40
+        mx-0
+        md:px-10
+        xl:px-40
+        2xl:px-80
+
 }
+
 
 .navbar {
+    
     @apply 
-    w-full
-    px-6
-    bg-black
-    md:px-10
-    xl:px-40
-    2xl:px-80
+        w-full
+        px-6
+        bg-black
+        md:px-10
+        xl:px-40
+        2xl:px-80
+
 }
 
 
-.nav-list-mobile{
+.nav-list-mobile {
+
     @apply
-    flex
-    justify-between  
-    items-center
-    h-full  
-    border-b-[1px]
-    border-white/50
-    py-8
-    px-6
-    lg:hidden
+        flex
+        justify-between  
+        items-center
+        h-full  
+        border-b-[1px]
+        border-white/50
+        py-8
+        px-6
+        lg:hidden
     
 }
 
-.nav-list-desktop{
+
+.nav-list-desktop {
+
     @apply
-    flex
-    justify-between  
-    items-center
-    h-full  
-    px-6
-    py-8
+        flex
+        justify-between  
+        items-center
+        h-full  
+        px-6
+        py-8
+        border-b-[1px]
+        border-white/50
+        xs:hidden
+        lg:flex
   
-    border-b-[1px]
-    border-white/50
-    xs:hidden
-    lg:flex
-  
 }
 
-.nav-list-desktop-absolute{
+
+.nav-list-desktop-absolute {
+
     @apply
-    flex
-    justify-between  
-    items-center
-    border-b-[1px]
-    border-white/50
-    px-6
-    py-8
-    w-full
-    h-full  
-    xs:hidden
-    lg:flex
+        flex
+        justify-between  
+        items-center
+        border-b-[1px]
+        border-white/50
+        px-6
+        py-8
+        w-full
+        h-full  
+        xs:hidden
+        lg:flex
 
 }
 
-.nav-list-absolute{
+
+.nav-list-absolute {
+
     @apply
-    flex
-    justify-between  
-    items-center
-    h-full  
-    lg:hidden
+        flex
+        justify-between  
+        items-center
+        h-full  
+        lg:hidden
+
 }
+
 
 .page-header {
+
     @apply
-    text-center
-    bg-black
-    py-8 
-    px-[84px] 
-    text-white 
-    uppercase 
-    font-semibold 
-    text-[28px] 
-    tracking-[2px]
+        text-center
+        bg-black
+        py-8 
+        px-[84px] 
+        text-white 
+        uppercase 
+        font-semibold 
+        text-[28px] 
+        tracking-[2px]
+
 }
-.nav-link{
+
+
+.nav-link {
+
     @apply
-    hover:text-orange-main
+        hover:text-orange-main
+    
 }
+
 
 .navbar-mobile-active {
+
     @apply
-    z-[50] 
-    absolute 
-    transition 
-    ease-in-out 
-    delay-150  
-    translate-x-0  
-    w-full 
-    bg-black/50 
-    h-[2000px]
-    top-[50px] 
-    md:top-[90px] 
+        z-[50] 
+        absolute 
+        transition 
+        ease-in-out 
+        delay-150  
+        translate-x-0  
+        w-full 
+        bg-black/50 
+        h-[2000px]
+        top-[50px] 
+        md:top-[90px] 
+
 }
+
 
 .navbar-mobile-closed {
+
     @apply 
-    z-[50] 
-    absolute 
-    transition 
-    ease-in-out 
-    delay-150  
-    translate-x-[-3000px] 
-    w-full 
-    top-[50px] 
-    md:top-[90px] 
-    h-[2000px]
+        z-[50] 
+        absolute 
+        transition 
+        ease-in-out 
+        delay-150  
+        translate-x-[-3000px] 
+        w-full 
+        top-[50px] 
+        md:top-[90px] 
+        h-[2000px]
+
 }
 
+
 .navbar-tablet-active {
+
     @apply
-    z-[50] 
-    absolute 
-    transition 
-    ease-in-out 
-    delay-150  
-    translate-x-0  
-    w-full 
-    h-[2000px]
-    bg-black/50 
-    top-[100px] 
-    md:top-[200px] 
+        z-[50] 
+        absolute 
+        transition 
+        ease-in-out 
+        delay-150  
+        translate-x-0  
+        w-full 
+        h-[2000px]
+        bg-black/50 
+        top-[100px] 
+        md:top-[200px] 
    
 }
 
+
 .navbar-tablet-closed {
+
     @apply
-    z-[50] 
-    absolute 
-    transition 
-    ease-in-out delay-150  
-    translate-x-[-3000px] 
-    w-full 
-    h-[2000px]
-    top-[100px] 
-    md:top-[200px]  
+        z-[50] 
+        absolute 
+        transition 
+        ease-in-out delay-150  
+        translate-x-[-3000px] 
+        w-full 
+        h-[2000px]
+        top-[100px] 
+        md:top-[200px]  
+        
 }

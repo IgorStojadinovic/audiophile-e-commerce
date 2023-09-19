@@ -15,19 +15,19 @@
 
 
 .scroll-disabled {
-    @apply overflow-y-hidden;
-  }
+  @apply overflow-y-hidden;
+}
   
-  .scroll-enabled {
-    @apply overflow-y-scroll;
-  }
+
+.scroll-enabled {
+   @apply overflow-y-scroll;
+}
 
 
 *{
-
   box-sizing: border-box;
-
 }
+
 
 body{
   padding: 0;

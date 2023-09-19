@@ -12,7 +12,6 @@ import {
     getXX99MKIIQuantity,
     getXX99MKIQuantity,
     showSummary
-
 } from '../../store/cartSlice';
 const Checkout = () => {
   
@@ -67,8 +66,8 @@ const Checkout = () => {
                     <div className="form-input-wapper">
                     <h1 className='form-group-main-header'>Checkout</h1>
                     <h2 className='form-group-secondary-header'>Billing Details</h2>
-                    <label htmlFor="name" className=' mb-2'>Name</label>
-                    <input type='text' name="name" className='form-input' onChange={handleChange} required />
+                    <label htmlFor="name" className=' mb-2'>Name {}</label>
+                    <input type='text' name="name" className='form-input' onChange={handleChange}   required/>
                     <label htmlFor="email" className='mt-4 mb-2'>Email Address</label>
                     <input type='email' name="email" className='form-input' onChange={handleChange}  required/>
                     <label htmlFor="phone" className='mt-4 mb-2'>Phone Number</label>

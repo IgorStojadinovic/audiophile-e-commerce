@@ -148,42 +148,23 @@ const XX99MARKII = () => {
         </div>
       </section>
       <section className="promo">
-        <picture className="rounded-lg md:order-3 md:w-full">
-        <source
-            media="(min-width: 1280px)"             
-            srcSet={require("../../assets/images/products/headphones-promo-desktop-1.png")}      
-        />
         <img
           src={require("../../assets/images/products/headphones-promo-mobile-1.png")}
-          className="w-full rounded-lg"
+          className="rounded-lg md:order-3 md:w-full"
           alt="promo"
         />
-        </picture>
-        <picture  className="rounded-lg md:order-1 md:w-full">
-          <source
-            media="(min-width: 1280px)"    
-            srcSet={require("../../assets/images/products/headphones-promo-desktop-2.png")}      
-          />
-       
+
         <img
           src={require("../../assets/images/products/headphones-promo-mobile-2.png")}
-         className="w-full rounded-lg"
+          className="rounded-lg md:order-1 md:w-full"
           alt="promo"
         />
-        </picture>
        
-       <picture className="rounded-lg md:order-2 md:row-span-2 md:w-full">
-        <source
-            media="(min-width: 1280px)"
-            srcSet={require("../../assets/images/products/xx99II-promo-desktop.png")}      
-          />
         <img
             src={require("../../assets/images/products/headphones-promo-mobile-3.png")}
-            className="rounded-lg w-full "
+            className="rounded-lg md:order-2 md:row-span-2 md:w-full"
             alt="promo"
           />
-       </picture>
-        
       </section>
       <section className="px-6 mb-[120px] xl:px-40 2xl:px-80">
         <h2 className="yml-title">You may also like</h2>
@@ -228,18 +209,10 @@ const XX99MARKII = () => {
         <div className="product-wapper">
           <div className="product-container">
             <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcSet={require("../../assets/images/products-section/products-section-headphone-desktop.png")}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-headphone-tablet.png")}
-              />
-              <img
-                className="xl:h-[140px]"
-                src={require("../../assets/images/products-section/product-section-headphone-mobile.png")}
-                alt=""
+            <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/product-section-headphone-mobile.png")} />
+              <img className=' xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/products-section-headphone-desktop.png")}
+                alt="footer-promo"
               />
             </picture>
             <h2 className="uppercase font-semibold tracking-widest">
@@ -261,17 +234,10 @@ const XX99MARKII = () => {
         <div className="product-wapper">
           <div className="product-container">
             <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcSet={require("../../assets/images/products-section/product-section-speaker-desktop.png")}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-speaker-trablet.png")}
-              />
-              <img
-                src={require("../../assets/images/products-section/prodcut-section-speaker-mobile.png")}
-                alt=""
+            <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/prodcut-section-speaker-mobile.png")} />
+              <img className=' xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/product-section-speaker-desktop.png")}
+                alt="footer-promo"
               />
             </picture>
 
@@ -294,17 +260,11 @@ const XX99MARKII = () => {
         <div className="product-wapper">
           <div className="product-container">
             <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcSet={require("../../assets/images/products-section/products-section-earphoens-desktop.png")}
-              />
-              <source
-                media="(min-width: 768px)"
-                srcSet={require("../../assets/images/products-section/products-section-earphones-tablet.png")}
-              />
-              <img
-                src={require("../../assets/images/products-section/products-section-earphones-mobile.png")}
-                alt=""
+            <source media="(min-width: 375px)" srcSet={require("../../assets/images/products-section/products-section-earphones-mobile.png")} />
+              
+              <img className=' xl:h-[120px] md:h-[100px]'
+                src={require("../../assets/images/products-section/yx-1-desktop.png")}
+                alt="footer-promo"
               />
             </picture>
             <h2 className="uppercase font-semibold tracking-widest">

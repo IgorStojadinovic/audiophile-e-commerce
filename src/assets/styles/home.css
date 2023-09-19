@@ -1,84 +1,88 @@
-
-/*.hero-container {
-    height: 100vh;
-    background: url('/src/assets/images/Bitmap.png'), rgb(0, 0, 0) 0px 0px / 100% 100% no-repeat;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    @apply
-    px-6
-    bg-hero-mobile
-}
-*/
-
 .hero-container {
+
   @apply
-  w-full
-  h-screen
-  px-6
-  bg-hero-mobile 
-  bg-center 
-  bg-cover
-  md:bg-hero-tablet
-  xl:bg-hero-desktop
-  overflow-hidden
-  xl:px-40
-  2xl:px-80
+    w-full
+    h-screen
+    px-6
+    bg-hero-mobile 
+    bg-center 
+    bg-cover
+    md:bg-hero-tablet
+    xl:bg-hero-desktop
+    overflow-hidden
+    xl:px-40
+    2xl:px-80
+
 } 
 
+
 .hero-wapper {
+
   @apply 
-  flex
-  items-center
-  justify-center
-  h-full
-  xl:justify-start
+    flex
+    items-center
+    justify-center
+    h-full
+    xl:justify-start
   
 }
 
+
 .hero-main {
+
   @apply
-  flex
-  flex-col
-  items-center
-  justify-center
-  text-center
-  mt-[108px]
-  md:mt-0
-  md:mx-48
-  xl:mx-0
-  xl:w-[30%]
-  xl:items-start
-  xl:text-left
-  z-20
+    flex
+    flex-col
+    items-center
+    justify-center
+    text-center
+    mt-[108px]
+    md:mt-0
+    md:mx-48
+    xl:mx-0
+    xl:w-[30%]
+    xl:items-start
+    xl:text-left
+    z-20
 
 }
+
 
 .hero-main-subheading {
-    letter-spacing: 10px;
-    font-size: 14px;
+
+  letter-spacing: 10px;
+  font-size: 14px;
+
   @apply
-  text-white/50
-  uppercase
-  text-sm /*14px*/
-  mb-4
-  xl:text-lg
+    text-white/50
+    uppercase
+    text-sm /*14px*/
+    mb-4
+    xl:text-lg
+
 }
+
 
 .hero-main-title {
-    letter-spacing: 1.286px;
-    font-weight: 700;
+
+  letter-spacing: 1.286px;
+  font-weight: 700;
+
   @apply
-  text-white
-  uppercase
-  text-3xl /*36px*/
-  mb-6
-  md:text-[58px]
-  md:leading-[58px]
-  xl:text-[78px]
-  xl:leading-[78px]
+    text-white
+    uppercase
+    text-3xl /*36px*/
+    mb-6
+    md:text-[58px]
+    md:leading-[58px]
+    xl:text-[78px]
+    xl:leading-[78px]
+
 }
 
+
 .hero-main-p {
+
   line-height: 25px;
   @apply
     text-white/75
@@ -88,50 +92,62 @@
     
 }
 
+
 .products-sections {
+
  @apply
- grid
- grid-cols-1
- gap-4
- px-6
- mt-10
- mb-[120px]
- md:grid-cols-3
- md:mt-[96px]
- md:mb-[96px]
- md:px-10
- md:gap-5
- xl:px-40
- xl:gap-20
- xl:mt-[120px]
- xl:mb-[150px]
- 2xl:px-80
+  grid
+  grid-cols-1
+  gap-4
+  px-6
+  mt-10
+  mb-[120px]
+  md:grid-cols-3
+  md:mt-[96px]
+  md:mb-[96px]
+  md:px-10
+  md:gap-5
+  xl:px-40
+  xl:gap-20
+  xl:mt-[120px]
+  xl:mb-[150px]
+  2xl:px-80
+
 }
+
 
 .product-wapper {
+
   @apply
-  relative 
-  h-[220px]
+    relative 
+    h-[220px]
+
 }
 
-.product-container{
+
+.product-container {
+
   @apply
-  flex 
-  flex-col 
-  justify-between 
-  items-center 
-  z-40 
-  h-full
+    flex 
+    flex-col 
+    justify-between 
+    items-center 
+    z-40 
+    h-full
+
 }
+
 
 .product-block-element {
+
   @apply
-  absolute
-  bg-[#F1F1F1]
-  h-[165px] 
-  w-full 
-  bottom-0  
-  rounded-lg 
-  z-[-10]
+    absolute
+    bg-[#F1F1F1]
+    h-[165px] 
+    w-full 
+    bottom-0  
+    rounded-lg 
+    z-[-10]
+    
 }
 

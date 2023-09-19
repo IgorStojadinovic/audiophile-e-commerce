@@ -1,40 +1,47 @@
 .cart-bark-overlay {
+
     @apply
-    absolute
-    bg-black/70 
-    h-full 
-    w-full 
-    top-0
-    z-30  
+        absolute
+        bg-black/70 
+        h-full 
+        w-full 
+        top-0
+        z-30  
+
 }
+
 
 .cart-container {
+
     @apply
-    z-40 
-    mt-28
-    mx-6 
-    px-8 
-    py-8 
-    bg-light-gray 
-    rounded-lg 
-    flex 
-    flex-col 
-    md:w-[50%] 
-    md:mt-32 
-    md:ml-auto 
-    xl:mt-32 
-    xl:mr-40 
-    xl:w-[20%] 
-    2xl:mr-80
+        z-40 
+        mt-28
+        mx-6 
+        px-8 
+        py-8 
+        bg-light-gray 
+        rounded-lg 
+        flex 
+        flex-col 
+        md:w-[50%] 
+        md:mt-32 
+        md:ml-auto 
+        xl:mt-32 
+        xl:mr-40 
+        xl:w-[20%] 
+        2xl:mr-80
 }
 
+
 .cart-close-btn {
+
     @apply
-    w-full 
-    flex 
-    justify-end  
-    items-center 
-    mb-5 
-    hover:cursor-pointer
+        w-full 
+        flex 
+        justify-end  
+        items-center 
+        mb-5 
+        hover:cursor-pointer
+
 }
 

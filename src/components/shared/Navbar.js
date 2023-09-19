@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className='relative'>
         <nav className="navbar-absolute">
         <ul className='nav-list-mobile '>
-            <li className='nav-list-item' onClick={() => { setShowMenu(!showMenu) }}><img src={MenuIcon} alt="menu" /></li>
+            <li className='nav-list-item hover:cursor-pointer' onClick={() => { setShowMenu(!showMenu) }}><img src={MenuIcon} alt="menu" /></li>
             <li className='nav-list-item'><Link to="/"><img src={Logo} alt="logo" /></Link></li>
             <li onClick={() => (dispatch(showCart()))} className='z-40 hover:cursor-pointer'>
               <img src={Cart} alt="cart-icon"/>
@@ -61,7 +61,7 @@ const Navbar = () => {
         :
         <nav className="navbar">
           <ul className='nav-list-mobile '>
-            <li className='nav-list-item' onClick={() => { setShowMenu(!showMenu) }}><img src={MenuIcon} alt="menu" /></li>
+            <li className='nav-list-item hover:cursor-pointer' onClick={() => { setShowMenu(!showMenu) }}><img src={MenuIcon} alt="menu" /></li>
             <li className='nav-list-item'><Link to="/"><img src={Logo} alt="logo" /></Link></li>
             <li onClick={() => (dispatch(showCart()))} className='z-40 '>
               <img src={Cart} alt="cart-icon"/>
