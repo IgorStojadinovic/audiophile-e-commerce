@@ -2,10 +2,9 @@
 
 [![My Skills](https://skills.thijs.gg/icons?i=react,redux,tailwind,javascript,&theme=dark)](https://skills.thijs.gg)
 
-A E-commerce website still in progress.
-What's currently done:
+A E-commerce store for audio equipment
 - Desktop view
-- Mobile view
+- Tablet view
 - Tablet view
 - Redux state managment
 - Cart functionality
